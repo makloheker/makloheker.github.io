@@ -1,170 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Maafin Aku ❤️</title>
-<meta name="theme-color" content="#ff7aa2">
-<style>
-:root{
-  --bg1:#0f0f14; --bg2:#171a24; --text:#f7f7fb; --muted:#b9bed1;
-  --pink:#ff7aa2; --pink2:#ff9dbc; --card:#1e2330;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family: 'Poppins', sans-serif;
-  color:var(--text);
-  background: radial-gradient(1000px 600px at 10% -10%, #1c2030 10%, transparent 60%),
-              linear-gradient(160deg,var(--bg1),var(--bg2));
-  display:flex; justify-content:center; align-items:center;
-  min-height:100vh; overflow:hidden; text-align:center;
-  padding:20px; position:relative;
-}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web Pesan Untuk Kamu</title>
+  <style>
+    :root{
+      --bg:#000;
+      --accent:#ff6b81;
+      --text:#e6eef8;
+      font-family: Inter, system-ui, sans-serif;
+    }
 
-/* --- hujan hati --- */
-.hearts{
-  position:fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  pointer-events:none;
-  overflow:hidden;
-  z-index:0;
-}
-.heart-fall{
-  position:absolute;
-  color:#ff7aa2;
-  animation:fall 7s linear infinite;
-  opacity:0.8;
-}
-@keyframes fall{
-  0%{transform:translateY(-10vh) scale(1);}
-  100%{transform:translateY(110vh) scale(1.2);}
-}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:var(--bg);color:var(--text);overflow:hidden}
 
-/* --- kartu utama --- */
-.card{
-  max-width:600px; width:100%;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:25px;
-  padding:25px;
-  box-shadow:0 0 25px rgba(0,0,0,.5);
-  backdrop-filter: blur(10px);
-  z-index:1;
-}
-h1{font-size:2rem;margin-bottom:10px;}
-p{color:var(--muted);margin-bottom:15px;}
-#typed{
-  min-height:70px;font-size:1.2rem;white-space:pre-wrap;margin-bottom:20px;
-}
-.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
-.btn{
-  padding:12px 20px;border:none;border-radius:14px;
-  font-weight:600;cursor:pointer;transition:.2s;
-}
-.btn-primary{
-  background:linear-gradient(135deg,var(--pink),var(--pink2));color:#1b0820;
-}
-.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.1);}
-.btn-ghost{
-  background:rgba(255,255,255,0.1);color:#fff;
-}
-.btn-ghost:hover{background:rgba(255,255,255,0.2);}
-.tiny{margin-top:15px;color:var(--muted);font-size:.9rem;}
-@keyframes pulse{
-  0%{transform:scale(1);opacity:.8}
-  50%{transform:scale(1.2);opacity:1}
-  100%{transform:scale(1);opacity:.8}
-}
-.heart{
-  color:var(--pink);
-  font-size:1.5rem;
-  display:inline-block;
-  animation:pulse 1s infinite;
-}
-#no{position:relative;}
-@media(max-width:480px){
-  h1{font-size:1.6rem;}
-  #typed{font-size:1rem;}
-  .btn{width:100%;font-size:1rem;}
-}
-</style>
+    .app{height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+
+    /* Tombol mulai */
+    .start-screen{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000;transition:opacity 1s ease;z-index:30}
+    .start-screen.hidden{opacity:0;pointer-events:none}
+
+    .touch-btn{background:transparent;border:none;font-size:1.3rem;color:white;padding:20px 40px;cursor:pointer;letter-spacing:1px;animation:pulse 2s infinite ease-in-out}
+    @keyframes pulse{0%{transform:scale(1);opacity:.9}50%{transform:scale(1.1);opacity:1}100%{transform:scale(1);opacity:.9}}
+
+    /* Scene */
+    .scene{position:absolute;inset:0;background:linear-gradient(#020617 0%, #061026 55%, #071022 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;opacity:0;transition:opacity 1s ease;}
+    .scene.visible{opacity:1}
+
+    /* Stars */
+    .stars{position:absolute;inset:0;}
+    .stars::before{content:'';position:absolute;inset:0;background-image:radial-gradient(white 1px, transparent 1px);background-size:3px 3px;opacity:.05;}
+
+    /* Bintang jatuh */
+    .shooting-star{position:absolute;width:2px;height:80px;background:linear-gradient(180deg,white,transparent);opacity:.7;animation:fall 2.5s linear infinite;}
+    @keyframes fall{0%{transform:translateY(-100px) translateX(0) rotate(45deg);opacity:1}100%{transform:translateY(800px) translateX(200px) rotate(45deg);opacity:0}}
+
+    /* Surat */
+    .letter{background:white;color:black;border-radius:12px;padding:20px 25px;width:min(400px,85vw);box-shadow:0 10px 40px rgba(0,0,0,0.5);cursor:pointer;animation:float 4s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+    /* Pesan overlay */
+    .message-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .5s ease;z-index:50}
+    .message-overlay.show{opacity:1;pointer-events:auto}
+
+    .message-card{background:rgba(10,15,30,0.9);border-radius:14px;padding:25px;text-align:center;color:white;width:min(600px,90vw);max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.7)}
+    .heart{margin-bottom:15px;animation:beat 1.4s infinite}
+    @keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+    .typing-cursor{display:inline-block;width:8px;height:20px;background:var(--accent);animation:blink .8s steps(2) infinite;vertical-align:bottom;margin-left:4px}
+    @keyframes blink{50%{opacity:0}}
+
+    .btn-close{margin-top:15px;padding:10px 20px;background:var(--accent);color:white;border:none;border-radius:8px;cursor:pointer}
+
+  </style>
 </head>
 <body>
+  <div class="app">
+    <div class="start-screen" id="start">
+      <button class="touch-btn" id="touchBtn">Sentuh untuk mulai</button>
+    </div>
 
-<!-- Efek hujan hati -->
-<div class="hearts" id="hearts"></div>
+    <div class="scene" id="scene">
+      <div class="stars" id="stars"></div>
+      <div class="letter" id="letter">📩 Klik untuk membuka surat</div>
+    </div>
 
-<div class="card">
-  <div class="heart">💗</div>
-  <h1>Maafin aku ya?</h1>
-  <p>Aku sadar mungkin udah bikin kamu kesel atau marah. Tapi beneran aku gaada maksud begitu 🥺</p>
-  <div id="typed"></div>
-  <div class="btns">
-    <button id="yes" class="btn btn-primary">Maafin aku ❤️</button>
-    <button id="no" class="btn btn-ghost">Enggak 😝</button>
+    <div class="message-overlay" id="overlay">
+      <div class="message-card">
+        <div class="heart">❤️</div>
+        <div class="message-text" id="messageText"></div>
+        <button class="btn-close" id="closeBtn">Tutup</button>
+      </div>
+    </div>
   </div>
-  <div class="tiny">PS: Aku janji bakal lebih peka dan gak bikin kamu bad mood lagi 💕</div>
-</div>
 
-<script>
-// ====== Efek mesin ketik ======
-const lines = [
-  "Aku minta maaf ya...",
-  "Aku tahu akhir-akhir ini aku nyebelin banget 😔",
-  "Tapi aku janji bakal berubah dan bikin kamu senyum lagi 💗"
-];
-let i=0,j=0,isTyping=true,el=document.getElementById('typed');
-function type(){
-  if(i>=lines.length)return;
-  const text=lines[i];
-  if(isTyping){
-    el.textContent=text.slice(0,j+1);
-    j++;
-    if(j===text.length){isTyping=false;setTimeout(type,800);return;}
-    setTimeout(type,35);
-  }else{
-    i++;j=0;isTyping=true;
-    setTimeout(type,200);
-  }
-}
-type();
+  <script>
+    const start=document.getElementById('start');
+    const touchBtn=document.getElementById('touchBtn');
+    const scene=document.getElementById('scene');
+    const stars=document.getElementById('stars');
+    const letter=document.getElementById('letter');
+    const overlay=document.getElementById('overlay');
+    const messageText=document.getElementById('messageText');
+    const closeBtn=document.getElementById('closeBtn');
 
-// ====== Tombol "Enggak" kabur ======
-const noBtn=document.getElementById('no');
-noBtn.addEventListener('mouseenter',moveBtn);
-function moveBtn(){
-  const vw=window.innerWidth,vh=window.innerHeight;
-  const x=Math.random()*(vw-100);
-  const y=Math.random()*(vh-50);
-  noBtn.style.position='fixed';
-  noBtn.style.left=x+'px';
-  noBtn.style.top=y+'px';
-}
+    function makeStars(count){
+      const frag=document.createDocumentFragment();
+      for(let i=0;i<count;i++){
+        const s=document.createElement('div');
+        const size=Math.random()*2+1;
+        s.style.position='absolute';
+        s.style.width=size+'px';
+        s.style.height=size+'px';
+        s.style.borderRadius='50%';
+        s.style.background='white';
+        s.style.left=Math.random()*100+'%';
+        s.style.top=Math.random()*100+'%';
+        s.style.opacity=Math.random();
+        s.style.animation=`twinkle ${Math.random()*5+3}s infinite ease-in-out`;
+        frag.appendChild(s);
+      }
+      stars.appendChild(frag);
+    }
 
-// ====== Klik tombol "Maafin aku" ======
-document.getElementById('yes').addEventListener('click',()=>{
-  const phone="628386820711"; // ganti 0 jadi 62
-  const msg=encodeURIComponent("aku maafin kamu cayang ❤️");
-  const url=`https://wa.me/${phone}?text=${msg}`;
-  window.open(url,'_blank');
-});
+    const twinkle=document.createElement('style');
+    twinkle.textContent='@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:1}}';
+    document.head.appendChild(twinkle);
 
-// ====== Efek hujan hati ======
-const heartsContainer=document.getElementById('hearts');
-const emojis=['💗','💖','💞','💕','💘','💝'];
-function createHeart(){
-  const span=document.createElement('span');
-  span.classList.add('heart-fall');
-  span.textContent=emojis[Math.floor(Math.random()*emojis.length)];
-  span.style.left=Math.random()*100+'%';
-  span.style.fontSize=12+Math.random()*24+'px';
-  span.style.animationDuration=5+Math.random()*5+'s';
-  heartsContainer.appendChild(span);
-  setTimeout(()=>span.remove(),10000);
-}
-setInterval(createHeart,250);
-</script>
+    makeStars(150);
 
+    function makeShootingStar(){
+      const s=document.createElement('div');
+      s.className='shooting-star';
+      s.style.left=Math.random()*100+'%';
+      s.style.top='-20px';
+      s.style.animationDuration=(Math.random()*2+1.5)+'s';
+      stars.appendChild(s);
+      setTimeout(()=>s.remove(),3000);
+    }
+    setInterval(makeShootingStar,1000+Math.random()*1500);
+
+    touchBtn.onclick=()=>{
+      start.classList.add('hidden');
+      setTimeout(()=>scene.classList.add('visible'),500);
+    };
+
+    const messages=[
+      `Hidup kadang tidak berjalan sesuai rencana, tapi itu bukan berarti kamu gagal. Setiap langkah yang kamu ambil, sekecil apa pun itu, adalah bukti bahwa kamu terus berjuang. Jangan biarkan satu hari buruk membuatmu lupa pada banyak hari baik yang pernah kamu lalui. Kamu sudah sejauh ini, jangan berhenti sekarang. Percayalah, hal-hal indah sedang menunggumu di depan sana.`,
+      `Ada saatnya kamu merasa lelah dan ingin menyerah, tapi ingatlah, tidak apa-apa untuk beristirahat. Tarik napas dalam-dalam, rasakan udara yang masih setia menemanimu. Dunia tidak meminta kamu menjadi sempurna, hanya untuk terus mencoba. Kamu pantas untuk bahagia, bahkan ketika semuanya terasa berat. Lanjutkan langkahmu, perlahan tapi pasti, karena setiap usaha kecilmu berarti.`,
+      `Jika hari ini terasa berat, itu bukan karena kamu lemah, tapi karena kamu sudah terlalu lama kuat. Beri dirimu waktu untuk tenang. Tidak apa-apa jika kamu belum sampai ke tujuan, karena prosesmu berharga. Suatu hari nanti, kamu akan melihat ke belakang dan tersenyum, karena ternyata semua perjuangan ini layak dijalani.`
+    ];
+
+    function typeText(text,el){
+      el.textContent='';
+      let i=0;
+      const cursor=document.createElement('span');
+      cursor.className='typing-cursor';
+      el.appendChild(cursor);
+      function step(){
+        if(i<text.length){
+          cursor.insertAdjacentText('beforebegin',text[i]);
+          i++;
+          setTimeout(step,35);
+        }else{cursor.remove();}
+      }
+      step();
+    }
+
+    letter.onclick=()=>{
+      overlay.classList.add('show');
+      const msg=messages[Math.floor(Math.random()*messages.length)];
+      setTimeout(()=>typeText(msg,messageText),200);
+    }
+
+    closeBtn.onclick=()=>{
+      overlay.classList.remove('show');
+      messageText.textContent='';
+    };
+  </script>
 </body>
 </html>
