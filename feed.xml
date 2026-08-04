@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2026-07-31T16:16:02+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Low Skill</title><subtitle>Blog Seputar IT Programming, Networking, dan Security.</subtitle><entry><title type="html">Panduan Belajar Programming dari Nol untuk Pemula</title><link href="http://0.0.0.0:4000/blog/panduan-belajar-programming-pemula" rel="alternate" type="text/html" title="Panduan Belajar Programming dari Nol untuk Pemula" /><published>2026-07-30T11:40:00+08:00</published><updated>2026-07-30T11:40:00+08:00</updated><id>http://0.0.0.0:4000/blog/panduan-belajar-programming-pemula</id><content type="html" xml:base="http://0.0.0.0:4000/blog/panduan-belajar-programming-pemula"><![CDATA[<p>Menjadi seorang <em>software developer</em> atau <em>programmer</em> adalah salah satu pilihan karier paling menjanjikan dan paling diminati saat ini. Namun bagi pemula yang baru pertama kali mengenal dunia IT, banyaknya istilah teknis, bahasa pemrograman, dan framework sering kali terasa membingungkan.</p>
+
+<p>Apakah Anda bingung harus mulai dari bahasa pemrograman apa? Atau bagaimana alur belajar coding yang benar agar tidak berhenti di tengah jalan?</p>
+
+<p>Dalam panduan SEO dan tutorial komprehensif ini, kita akan membahas langkah demi langkah <strong>cara belajar programming dari nol</strong> secara terstruktur dan efisien.</p>
+
+<hr />
+
+<h2 id="1-pahami-alasan-dan-tujuan-belajar-coding">1. Pahami Alasan dan Tujuan Belajar Coding</h2>
+
+<p>Sebelum langsung menulis baris kode pertama Anda, tentukan terlebih dahulu tujuan utama Anda belajar pemrograman:</p>
+
+<ul>
+  <li><strong>Web Development</strong>: Ingin membuat situs web interaktif, toko online, atau aplikasi web (HTML, CSS, JavaScript, React, Node.js).</li>
+  <li><strong>Mobile App Development</strong>: Ingin membuat aplikasi Android atau iOS (Flutter, React Native, Kotlin, Swift).</li>
+  <li><strong>Data Science &amp; AI</strong>: Ingin mengolah data besar, analisis statistik, atau machine learning (Python, R, SQL).</li>
+  <li><strong>Cyber Security &amp; Ethical Hacking</strong>: Ingin mendalami keamanan jaringan dan pentest (Python, Bash, C/C++).</li>
+</ul>
+
+<p>Memiliki tujuan yang jelas akan membantu Anda memilih bahasa pemrograman pertama yang paling tepat dan menjaga motivasi belajar.</p>
+
+<hr />
+
+<h2 id="2-pilih-bahasa-pemrograman-pertama-yang-tepat">2. Pilih Bahasa Pemrograman Pertama yang Tepat</h2>
+
+<p>Tidak ada satu bahasa pemrograman yang “terbaik” untuk semua hal, namun ada beberapa bahasa yang sangat ramah untuk pemula (<em>beginner-friendly</em>).</p>
+
+<p><img src="./assets/img/blog/panduan-belajar-programming-pemula/bahasa-pemrograman-populer.png" alt="Bahasa Pemrograman Populer untuk Pemula" />
+<em>Gambar 1: Ekosistem berbagai bahasa pemrograman populer seperti Python, JavaScript, HTML/CSS, dan C++.</em></p>
+
+<h3 id="rekomendasi-bahasa-pemrograman-untuk-pemula">Rekomendasi Bahasa Pemrograman untuk Pemula:</h3>
+
+<ol>
+  <li><strong>Python</strong>:
+    <ul>
+      <li><em>Keunggulan</em>: Sintaks sangat bersih, mudah dibaca mirip bahasa Inggris, serta serbaguna (Web, Data Science, AI, Automation).</li>
+      <li><em>Cocok untuk</em>: Pemula mutlak, peminat Data Science &amp; Cyber Security.</li>
+    </ul>
+  </li>
+  <li><strong>JavaScript</strong>:
+    <ul>
+      <li><em>Keunggulan</em>: Bahasa wajib untuk pengembangan web modern. Bisa berjalan di browser (<em>Frontend</em>) maupun server (<em>Backend</em> dengan Node.js).</li>
+      <li><em>Cocok untuk</em>: Pengembang Web dan Aplikasi Full-Stack.</li>
+    </ul>
+  </li>
+  <li><strong>HTML &amp; CSS</strong> (Bahasa Marka &amp; Styling):
+    <ul>
+      <li><em>Keunggulan</em>: Fondasi dasar pembuatan tampilan halaman web sebelum melangkah ke JavaScript.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="3-roadmap-belajar-programming-yang-terstruktur">3. Roadmap Belajar Programming yang Terstruktur</h2>
+
+<p>Untuk menguasai pemrosesan kode hingga menjadi pengembang yang andal, ikuti tahapan roadmap belajar berikut:</p>
+
+<p><img src="./assets/img/blog/panduan-belajar-programming-pemula/roadmap-belajar-coding.png" alt="Roadmap Belajar Coding Developer" />
+<em>Gambar 2: Tahapan alur pembelajaran dari logika dasar, algoritma, backend, hingga arsitektur cloud.</em></p>
+
+<h3 id="tahap-1-logika-pemrograman--algoritma">Tahap 1: Logika Pemrograman &amp; Algoritma</h3>
+<p>Pelajari konsep dasar dasar pemrograman yang berlaku di hampir semua bahasa:</p>
+<ul>
+  <li><strong>Variabel &amp; Tipe Data</strong>: Menyimpan data angka, teks (string), atau boolean.</li>
+  <li><strong>Pengkondisian (If / Else)</strong>: Membuat keputusan berdasarkan logika tertentu.</li>
+  <li><strong>Perulangan (Loops)</strong>: Menjalankan perintah berulang kali (For, While).</li>
+  <li><strong>Fungsi (Functions)</strong>: Memecah kode menjadi blok-blok yang reusabel.</li>
+</ul>
+
+<h3 id="tahap-2-struktur-data-dasar">Tahap 2: Struktur Data Dasar</h3>
+<p>Pahami cara mengorganisasi data dengan efektif:</p>
+<ul>
+  <li>Array / List</li>
+  <li>Object / Dictionary</li>
+  <li>Stack &amp; Queue</li>
+</ul>
+
+<h3 id="tahap-3-praktik-membuat-proyek-sederhana">Tahap 3: Praktik Membuat Proyek Sederhana</h3>
+<p>Jangan hanya membaca teori atau menonton tutorial (<em>tutorial hell</em>). Mulailah membuat proyek kecil (<em>Build by doing</em>):</p>
+<ul>
+  <li>Calculator App</li>
+  <li>To-Do List Application</li>
+  <li>Personal Portfolio Website</li>
+</ul>
+
+<hr />
+
+<h2 id="4-tips-efektif-agar-cepat-mahir-coding">4. Tips Efektif Agar Cepat Mahir Coding</h2>
+
+<ol>
+  <li><strong>Konsisten Latihan Harian</strong>: Lebih baik coding 30 menit setiap hari daripada 5 jam sekaligus hanya di akhir pekan.</li>
+  <li><strong>Gunakan Version Control (Git &amp; GitHub)</strong>: Simpan jejak kodingan Anda dan bangun portofolio di GitHub sejak hari pertama.</li>
+  <li><strong>Manfaatkan Komunitas &amp; AI</strong>: Jangan ragu bertanya di forum seperti Stack Overflow, Reddit, atau memanfaatkan AI assistant untuk menjelaskan error pada kode Anda.</li>
+</ol>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Belajar programming dari nol bukanlah hal yang mustahil. Dengan memilih bahasa yang sesuai, mengikuti alur belajar terstruktur, dan rajin mempraktikkan kode melalui proyek nyata, Anda akan mampu menguasai keterampilan coding dalam waktu singkat.</p>
+
+<blockquote>
+  <p><em>“Cara terbaik untuk belajar bahasa pemrograman baru adalah dengan menulis program di dalamnya.”</em> — Dennis Ritchie</p>
+</blockquote>]]></content><author><name></name></author><category term="programming" /><category term="coding" /><category term="tutorial" /><category term="programming" /><category term="coding" /><category term="python" /><category term="javascript" /><category term="pemula" /><category term="tutorial" /><category term="developer" /><summary type="html"><![CDATA[Ingin belajar coding tapi bingung harus mulai dari mana? Simak panduan belajar programming lengkap dari nol, rekomendasi bahasa pemrograman, hingga roadmap karier developer.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/panduan-belajar-programming-pemula.png" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/panduan-belajar-programming-pemula.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Konsep Dasar dan Arsitektur Jaringan Komputer Modern</title><link href="http://0.0.0.0:4000/blog/konsep-dasar-jaringan-komputer-modern" rel="alternate" type="text/html" title="Konsep Dasar dan Arsitektur Jaringan Komputer Modern" /><published>2026-07-30T06:55:00+08:00</published><updated>2026-07-30T06:55:00+08:00</updated><id>http://0.0.0.0:4000/blog/konsep-dasar-jaringan-komputer-modern</id><content type="html" xml:base="http://0.0.0.0:4000/blog/konsep-dasar-jaringan-komputer-modern"><![CDATA[<p>Jaringan komputer merupakan fondasi utama dari seluruh infrastruktur teknologi informasi modern. Mulai dari komunikasi antar perangkat rumah tangga hingga pusat data (<em>data center</em>) global, pemahaman yang kuat tentang konsep jaringan sangat krusial bagi praktisi IT dan <em>security enthusiast</em>.</p>
+
+<p>Dalam artikel ini, kita akan mengulas secara mendalam prinsip dasar jaringan komputer, model referensi OSI 7 Layer, protokol komunikasi TCP/IP, serta topologi jaringan yang umum digunakan saat ini.</p>
+
+<hr />
+
+<h2 id="1-apa-itu-jaringan-komputer">1. Apa itu Jaringan Komputer?</h2>
+
+<p>Jaringan komputer adalah sekumpulan perangkat otonom (seperti komputer, server, router, dan switch) yang saling terhubung melalui media transmisi (kabel atau nirkabel) untuk saling berbagi sumber daya, data, dan layanan.</p>
+
+<p>Komponen utama dalam jaringan komputer meliputi:</p>
+<ul>
+  <li><strong>Node/End-Device</strong>: Komputer client, server, smartphone, IoT device.</li>
+  <li><strong>Intermediary Devices</strong>: Switch, Router, Firewall, Access Point.</li>
+  <li><strong>Media Transmisi</strong>: Kabel UTP/STP, Fiber Optic, dan Gelombang Radio (Wi-Fi).</li>
+</ul>
+
+<hr />
+
+<h2 id="2-arsitektur-7-lapisan-osi-model">2. Arsitektur 7 Lapisan OSI Model</h2>
+
+<p>Model <strong>OSI (Open Systems Interconnection)</strong> adalah kerangka konseptual yang membagi proses komunikasi jaringan menjadi 7 lapisan (<em>layers</em>).</p>
+
+<p><img src="./assets/img/blog/konsep-dasar-jaringan-komputer-modern/osi-layer-architecture.svg" alt="Arsitektur 7 Lapisan OSI Model" />
+<em>Gambar 1: Diagram konseptual 7 lapisan OSI Model dari Physical Layer hingga Application Layer.</em></p>
+
+<p>Berikut adalah alur 7 lapisan OSI dari tingkat aplikasi hingga fisik:</p>
+
+<ol>
+  <li><strong>Application Layer (Layer 7)</strong>: Antarmuka langsung dengan aplikasi pengguna (HTTP, HTTPS, FTP, SSH, SMTP).</li>
+  <li><strong>Presentation Layer (Layer 6)</strong>: Enkripsi, kompresi, dan penerjemahan format data (SSL/TLS, JSON, XML).</li>
+  <li><strong>Session Layer (Layer 5)</strong>: Membuka, mengelola, dan mengakhiri sesi komunikasi antar aplikasi (NetBIOS, RPC).</li>
+  <li><strong>Transport Layer (Layer 4)</strong>: Pengiriman data <em>end-to-end</em> dan kontrol alur (TCP, UDP).</li>
+  <li><strong>Network Layer (Layer 3)</strong>: Pengalamatan logis dan menentukan rute (<em>routing</em>) paket data (IPv4, IPv6, ICMP).</li>
+  <li><strong>Data Link Layer (Layer 2)</strong>: Pengalamatan fisik (MAC Address) dan pemaketan kerangka (<em>frame</em>) data (Ethernet, Wi-Fi 802.11).</li>
+  <li><strong>Physical Layer (Layer 1)</strong>: Transmisi sinyal listrik, optik, atau radio murni melalui media fisik.</li>
+</ol>
+
+<hr />
+
+<h2 id="3-protokol-komunikasi-tcp-vs-udp">3. Protokol Komunikasi: TCP vs UDP</h2>
+
+<p>Pada Transport Layer, terdapat dua protokol transmisi utama yang menjadi tulang punggung lalu lintas jaringan internet:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Fitur</th>
+      <th style="text-align: left">TCP (Transmission Control Protocol)</th>
+      <th style="text-align: left">UDP (User Datagram Protocol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Koneksi</strong></td>
+      <td style="text-align: left">Connection-oriented (Handshake 3 arah)</td>
+      <td style="text-align: left">Connectionless</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Keandalan</strong></td>
+      <td style="text-align: left">Sangat tinggi (Retransmisi jika paket hilang)</td>
+      <td style="text-align: left">Tanpa garansi pengiriman (<em>best effort</em>)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Kecepatan</strong></td>
+      <td style="text-align: left">Sedikit lebih lambat karena overhead kontrol</td>
+      <td style="text-align: left">Sangat cepat</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Penggunaan</strong></td>
+      <td style="text-align: left">Web browsing (HTTP/S), Email, Transfer File</td>
+      <td style="text-align: left">Live Streaming, Online Gaming, VoIP, DNS</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="4-topologi-jaringan-modern">4. Topologi Jaringan Modern</h2>
+
+<p>Topologi jaringan menentukan struktur fisik atau logis dari bagaimana perangkat-perangkat dalam jaringan saling terhubung satu sama lain.</p>
+
+<p><img src="./assets/img/blog/konsep-dasar-jaringan-komputer-modern/topologi-jaringan.svg" alt="Topologi Jaringan Modern" />
+<em>Gambar 2: Perbandingan skematik berbagai topologi jaringan komputer.</em></p>
+
+<h3 id="topologi-utama">Topologi Utama:</h3>
+<ul>
+  <li><strong>Star Topology</strong>: Perangkat terhubung ke pusat pemusat (<em>Central Switch</em>). Sangat populer di jaringan LAN saat ini karena mudah diisolasi jika terjadi kegagalan perangkat.</li>
+  <li><strong>Mesh Topology</strong>: Setiap node terhubung ke banyak node lainnya (<em>Full Mesh</em> / <em>Partial Mesh</em>). Memberikan redundansi tinggi dan ketahanan kegagalan (<em>fault tolerance</em>), umum dipakai di jaringan backbone dan data center.</li>
+  <li><strong>Hybrid Topology</strong>: Kombinasi dua atau lebih topologi dasar untuk memenuhi kebutuhan skala enterprise yang kompleks.</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Memahami alur data pada lapisan OSI, perbedaan protokol transmisi TCP/UDP, serta desain topologi fisik merupakan langkah awal yang wajib dikuasai sebelum mendalami topik tingkat lanjut seperti <em>Network Security</em>, <em>Penetration Testing</em>, maupun <em>Cloud Infrastructure</em>.</p>
+
+<blockquote>
+  <p><em>“Jaringan yang andal dan aman dibangun di atas fondasi pemahaman arsitektur yang kuat.”</em></p>
+</blockquote>]]></content><author><name></name></author><category term="networking" /><category term="infrastructure" /><category term="security" /><category term="networking" /><category term="tcp-ip" /><category term="osi-model" /><category term="routing" /><summary type="html"><![CDATA[Panduan komprehensif memahami konsep dasar jaringan komputer, model OSI, protokol TCP/IP, serta topologi jaringan modern.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/konsep-dasar-jaringan-komputer-modern.svg" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/konsep-dasar-jaringan-komputer-modern.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kali Linux vs Parrot Security OS: Mana yang lebih baik?</title><link href="http://0.0.0.0:4000/blog/kali-linux-parrot-sec-os" rel="alternate" type="text/html" title="Kali Linux vs Parrot Security OS: Mana yang lebih baik?" /><published>2025-12-17T14:45:11+08:00</published><updated>2025-12-17T14:45:11+08:00</updated><id>http://0.0.0.0:4000/blog/kali-linux-parrot-sec-os</id><content type="html" xml:base="http://0.0.0.0:4000/blog/kali-linux-parrot-sec-os"><![CDATA[<p>Dalam dunia cyber security dan ethical hacking, dua sistem operasi yang paling sering dibandingkan adalah Kali Linux dan Parrot Security OS. Keduanya sama-sama dirancang khusus untuk penetration testing, digital forensics, dan security research. Namun, meskipun terlihat mirip di permukaan, keduanya memiliki filosofi, keunggulan, dan target pengguna yang berbeda.</p>
+
+<p>Artikel ini akan membahas perbandingan Kali Linux dan Parrot Security OS secara mendalam, khususnya untuk menjawab pertanyaan: <strong>mana yang lebih baik untuk pentest?</strong></p>
+
+<h2 id="pengenalan-os">Pengenalan OS</h2>
+
+<h3 id="apa-itu-kali-linux">Apa itu Kali Linux?</h3>
+
+<p>Kali Linux dikembangkan oleh Offensive Security dan dikenal sebagai standar industri untuk penetration testing. Sistem operasi ini merupakan penerus BackTrack Linux dan dirancang murni untuk keperluan offensive security.</p>
+
+<p><strong>Ciri Utama Kali Linux:</strong></p>
+
+<ul>
+  <li>Fokus penuh pada <strong>penetration testing</strong></li>
+  <li>Ratusan tools keamanan sudah terinstal secara default</li>
+  <li>Digunakan secara luas oleh profesional, trainer, dan sertifikasi keamanan</li>
+  <li>Dokumentasi sangat lengkap dan komunitas besar</li>
+</ul>
+
+<p>Kali sering menjadi pilihan utama dalam pelatihan pentest, CTF, hingga sertifikasi seperti OSCP.</p>
+
+<h3 id="apa-itu-parrot-security-os">Apa itu Parrot Security OS?</h3>
+
+<p>Parrot Security OS dikembangkan oleh <strong>Parrot Project</strong> dan memiliki pendekatan yang sedikit berbeda. Selain sebagai OS pentest, Parrot juga menekankan <strong>privacy</strong>, <strong>anonimitas</strong>, dan <strong>daily use</strong>.</p>
+
+<p><strong>Ciri utama Parrot Security OS:</strong></p>
+
+<ul>
+  <li>Lebih ringan dan hemat resource</li>
+  <li>Fokus pada security + privacy</li>
+  <li>Tersedia mode Security, Home, dan IoT</li>
+  <li>Cocok untuk laptop harian sekaligus pentesting</li>
+</ul>
+
+<p>Parrot sering dipilih oleh pengguna yang ingin satu sistem untuk <strong>belajar</strong>, <strong>pentest</strong>, dan <strong>aktivitas sehari-hari</strong>.</p>
+
+<h2 id="perbandingan">Perbandingan</h2>
+
+<p>Kali Linux dan Parrot Security OS memiliki Tools Penetration Testing (Pentest) yang sudah ada di dalam os itu sendiri.</p>
+
+<h3 id="kelengkapan-tools-pentest">Kelengkapan Tools Pentest</h3>
+
+<p><strong>Kali Linux:</strong></p>
+
+<ul>
+  <li>Tools sangat lengkap dan up-to-date</li>
+  <li>Hampir semua tool pentest populer tersedia secara default</li>
+  <li>Sangat cocok untuk pentest profesional dan enterprise</li>
+</ul>
+
+<p><strong>Parrot Security OS:</strong></p>
+
+<ul>
+  <li>Tools cukup lengkap, namun lebih selektif</li>
+  <li>Beberapa tool perlu diinstal manual</li>
+  <li>Lebih fokus ke usability dan stabilitas</li>
+</ul>
+
+<p>Jadi untuk kelengkapan tools murni, <strong>Kali Linux</strong> lebih unggu.</p>
+
+<h3 id="performa-sistem">Performa Sistem</h3>
+
+<p><strong>Kali Linux:</strong></p>
+
+<ul>
+  <li>Relatif berat jika dijalankan di spesifikasi rendah</li>
+  <li>Lebih optimal di VM atau mesin khusus</li>
+</ul>
+
+<p><strong>Parrot Security OS:</strong></p>
+
+<ul>
+  <li>Lebih ringan dan responsif</li>
+  <li>Cocok untuk laptop dengan RAM terbatas</li>
+  <li>Lebih nyaman untuk penggunaan jangka panjang</li>
+</ul>
+
+<p>Untuk performa dan efisiensi resource, Parrot lebih unggul.</p>
+
+<h3 id="kemudahan-penggunaan">Kemudahan Penggunaan</h3>
+
+<p><strong>Kali Linux:</strong></p>
+
+<ul>
+  <li>Kurva belajar cukup tinggi untuk pemula</li>
+  <li>Sangat teknis dan fokus ke pentest</li>
+</ul>
+
+<p><strong>Parrot Security OS:</strong></p>
+
+<ul>
+  <li>UI lebih ramah</li>
+  <li>Lebih nyaman untuk pemula</li>
+  <li>Bisa digunakan sebagai OS harian</li>
+</ul>
+
+<p>Untuk pemula, Parrot Security OS lebih ramah.</p>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Tidak ada sistem yang benar-benar “lebih baik” secara mutlak.
+<strong>Kali Linux unggul sebagai senjata utama pentester profesional</strong>, sedangkan <strong>Parrot Security OS unggul sebagai OS security yang ringan, fleksibel, dan ramah pengguna</strong>.</p>
+
+<p>Banyak praktisi bahkan menggunakan keduanya, tergantung skenario dan kebutuhan.</p>
+
+<blockquote>
+  <p>Pentesting bukan tentang OS mana yang kamu pakai, tapi seberapa dalam kamu memahami tools dan tekniknya.</p>
+</blockquote>]]></content><author><name></name></author><category term="pentest" /><category term="security" /><category term="hacking" /><category term="linux" /><category term="os" /><category term="pentest" /><summary type="html"><![CDATA[Dalam dunia cyber security dan ethical hacking, dua sistem operasi yang paling sering dibandingkan adalah Kali Linux dan Parrot Security OS. Keduanya sama-sama dirancang khusus untuk penetration testing, digital forensics, dan security research. Namun, meskipun terlihat mirip di permukaan, keduanya memiliki filosofi, keunggulan, dan target pengguna yang berbeda.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/kali-linux-vs-parrot-sec-os.png" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/blog/thumbnail/kali-linux-vs-parrot-sec-os.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/blog/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-12-01T12:01:39+08:00</published><updated>2025-12-01T12:01:39+08:00</updated><id>http://0.0.0.0:4000/blog/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/blog/welcome-to-jekyll"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">berak</title><link href="http://0.0.0.0:4000/blog/adakah-sibut" rel="alternate" type="text/html" title="berak" /><published>2025-08-07T00:00:00+08:00</published><updated>2025-08-07T00:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/adakah-sibut</id><content type="html" xml:base="http://0.0.0.0:4000/blog/adakah-sibut"><![CDATA[<h1 id="dawg">dawg</h1>
+
+<h2 id="apa-itu-jaringan-komputer">Apa Itu Jaringan Komputer?</h2>
+
+<p>Secara sederhana, jaringan komputer adalah suatu sistem yang menghubungkan dua atau lebih perangkat komputer agar dapat saling bertukar data dan informasi. Tujuan utama dari jaringan komputer adalah memungkinkan komunikasi, efisiensi, serta kolaborasi antarperangkat dengan lebih cepat dan efektif.
+<img src="http://https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2025/07/miniature-engineer-worker-plug-lan-cable-computer-2048x1365.jpg" alt="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2025/07/miniature-engineer-worker-plug-lan-cable-computer-2048x1365.jpg" /></p>
+
+<h3 id="definisi-menurut-para-ahli">Definisi Menurut Para Ahli</h3>
+
+<p>Inilah beberapa definisi menurut para pakar IT sebagai referensi.
+Menurut William Stallings, jaringan komputer adalah sistem komunikasi data terdiri dari sejumlah komputer dan perangkat lunak yang terhubung melalui media komunikasi.
+Menurut Andrew S. Tanenbaum, jaringan komputer adalah kumpulan komputer otonom yang saling terhubung menggunakan satu protokol komunikasi.</p>
+
+<h2 id="fungsi-jaringan-komputer">Fungsi Jaringan Komputer</h2>
+
+<p>Setelah memahami apa itu jaringan komputer, penting juga untuk mengetahui peran jaringan komputer dalam kehidupan kita.</p>
+
+<p>Berikut adalah beberapa fungsi utamanya.</p>
+
+<ol>
+  <li>Pertukaran Data dan Informasi
+Komputer yang tergabung dalam jaringan bisa saling mengirim dan menerima data dengan cepat melalui protokol tertentu.</li>
+  <li>Kolaborasi dan Komunikasi
+Dengan jaringan komputer, banyak orang dapat bekerja sama pada satu dokumen atau proyek secara real-time.</li>
+  <li>Berbagi Sumber Daya (resource sharing)
+Perangkat seperti printer, scanner, hingga koneksi internet bisa digunakan bersama oleh beberapa komputer dalam satu jaringan.</li>
+  <li>
+    <p>Keamanan Informasi
+Melalui sistem jaringan yang dikelola baik, informasi data bisa diamankan dengan firewall, enkripsi, dan kebijakan akses pengguna.</p>
+  </li>
+  <li>Efisiensi Kerja
+Proses pengerjaan yang saling terhubung membuat pekerjaan lebih cepat dan hemat waktu.</li>
+</ol>]]></content><author><name></name></author><category term="programming" /><summary type="html"><![CDATA[Understanding variables, loops, and control structures is the first step.]]></summary></entry><entry><title type="html">Hello</title><link href="http://0.0.0.0:4000/blog/hello" rel="alternate" type="text/html" title="Hello" /><published>2025-06-06T00:00:00+08:00</published><updated>2025-06-06T00:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/hello</id><content type="html" xml:base="http://0.0.0.0:4000/blog/hello"><![CDATA[<h2 id="apa-itu-jaringan-komputer">Apa Itu Jaringan Komputer?</h2>
+
+<p>Secara sederhana, jaringan komputer adalah suatu sistem yang menghubungkan dua atau lebih perangkat komputer agar dapat saling bertukar data dan informasi. Tujuan utama dari jaringan komputer adalah memungkinkan komunikasi, efisiensi, serta kolaborasi antarperangkat dengan lebih cepat dan efektif.
+<img src="http://https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2025/07/miniature-engineer-worker-plug-lan-cable-computer-2048x1365.jpg" alt="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2025/07/miniature-engineer-worker-plug-lan-cable-computer-2048x1365.jpg" /></p>
+<h3 id="definisi-menurut-para-ahli">Definisi Menurut Para Ahli</h3>
+<p>Inilah beberapa definisi menurut para pakar IT sebagai referensi.
+Menurut William Stallings, jaringan komputer adalah sistem komunikasi data terdiri dari sejumlah komputer dan perangkat lunak yang terhubung melalui media komunikasi.
+Menurut Andrew S. Tanenbaum, jaringan komputer adalah kumpulan komputer otonom yang saling terhubung menggunakan satu protokol komunikasi.</p>
+<h2 id="fungsi-jaringan-komputer">Fungsi Jaringan Komputer</h2>
+<p>Setelah memahami apa itu jaringan komputer, penting juga untuk mengetahui peran jaringan komputer dalam kehidupan kita.</p>
+
+<p>Berikut adalah beberapa fungsi utamanya.</p>
+<ol>
+  <li>Pertukaran Data dan Informasi
+Komputer yang tergabung dalam jaringan bisa saling mengirim dan menerima data dengan cepat melalui protokol tertentu.</li>
+  <li>Kolaborasi dan Komunikasi
+Dengan jaringan komputer, banyak orang dapat bekerja sama pada satu dokumen atau proyek secara real-time.</li>
+  <li>Berbagi Sumber Daya (resource sharing)
+Perangkat seperti printer, scanner, hingga koneksi internet bisa digunakan bersama oleh beberapa komputer dalam satu jaringan.</li>
+  <li>
+    <p>Keamanan Informasi
+Melalui sistem jaringan yang dikelola baik, informasi data bisa diamankan dengan firewall, enkripsi, dan kebijakan akses pengguna.</p>
+  </li>
+  <li>Efisiensi Kerja
+Proses pengerjaan yang saling terhubung membuat pekerjaan lebih cepat dan hemat waktu.</li>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[Apa Itu Jaringan Komputer?]]></summary></entry><entry><title type="html">adakah acara malam ini // LEVEL_5</title><link href="http://0.0.0.0:4000/blog/jemboetss" rel="alternate" type="text/html" title="adakah acara malam ini // LEVEL_5" /><published>2025-01-01T11:00:00+08:00</published><updated>2025-01-01T11:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/jemboetss</id><content type="html" xml:base="http://0.0.0.0:4000/blog/jemboetss"><![CDATA[<p>Laporan insiden keamanan…
+hari ini saya melaporkan bahwa kamu berak <code class="language-plaintext highlighter-rouge">dikebon</code> taik</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">hello world</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/gambar1.png" alt="The San Juan Mountains are beautiful" title="San Juan Mountains" /></p>
+
+<h3 id="adakah">adakah</h3>
+
+<p>hello adakahh
+<img src="/assets/img/gambar2.jpg" alt="The San Juan Mountains are beautiful" title="San Juan Mountains" /></p>]]></content><author><name></name></author><category term="networking" /><category term="security" /><category term="ubuntu" /><category term="ssh" /><category term="coli" /><summary type="html"><![CDATA[Laporan insiden keamanan… hari ini saya melaporkan bahwa kamu berak dikebon taik]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/gambar1.png" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/gambar1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Basic Networking Concepts</title><link href="http://0.0.0.0:4000/blog/networking-concepts" rel="alternate" type="text/html" title="Basic Networking Concepts" /><published>2024-01-03T00:00:00+08:00</published><updated>2024-01-03T00:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/networking-concepts</id><content type="html" xml:base="http://0.0.0.0:4000/blog/networking-concepts"><![CDATA[<h2 id="bagaimana-komputer-berbicara">Bagaimana Komputer Berbicara</h2>
+
+<p>Jaringan adalah praktik pengangkutan dan pertukaran data antar node melalui media bersama dalam suatu sistem informasi.</p>
+
+<h3 id="alamat-ip">Alamat IP</h3>
+
+<p>Setiap perangkat di jaringan memerlukan pengenal unik, yang dikenal sebagai alamat IP.</p>
+
+<ul>
+  <li><strong>IPv4:</strong> alamat 32-bit (misalnya, 192.168.1.1).</li>
+  <li><strong>IPv6:</strong> alamat 128-bit, dikembangkan untuk menggantikan IPv4 ketika alamat habis.</li>
+</ul>
+
+<h3 id="tcp-vs-udp">TCP vs UDP</h3>
+
+<p>Data dikirim dalam bentuk paket. Ada dua cara utama untuk mengirimkannya:</p>
+
+<ol>
+  <li><strong>TCP (Transmission Control Protocol):</strong> Berorientasi koneksi. Menjamin pengiriman. Bayangkan seperti surat resmi; Anda mendapatkan tanda terima bahwa surat telah sampai. Digunakan untuk penelusuran web (HTTP), email.</li>
+  <li><strong>UDP (User Datagram Protocol):</strong> Tanpa koneksi. Mengirim data tanpa memeriksa apakah data telah sampai. Lebih cepat tetapi kurang andal. Digunakan untuk Streaming, Game, VoIP.</li>
+</ol>
+
+<h3 id="model-osi">Model OSI</h3>
+
+<p>Model Interkoneksi Sistem Terbuka (OSI) menjelaskan tujuh lapisan yang digunakan sistem komputer untuk berkomunikasi melalui jaringan. Model ini mencakup tujuh lapisan, mulai dari lapisan Fisik (kabel) hingga lapisan Aplikasi (peramban web).</p>]]></content><author><name></name></author><category term="networking" /><summary type="html"><![CDATA[How data moves across the wire: IP, TCP/UDP and the OSI Model.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/img/gambar3.jpg" /><media:content medium="image" url="http://0.0.0.0:4000/assets/img/gambar3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Basic Cyber Security Concepts</title><link href="http://0.0.0.0:4000/blog/cyber-security-concepts" rel="alternate" type="text/html" title="Basic Cyber Security Concepts" /><published>2024-01-02T00:00:00+08:00</published><updated>2024-01-02T00:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/cyber-security-concepts</id><content type="html" xml:base="http://0.0.0.0:4000/blog/cyber-security-concepts"><![CDATA[<h2 id="the-cia-triad">The CIA Triad</h2>
+
+<p>In the world of information security, the CIA triad serves as the fundamental model for developing security policies.</p>
+
+<h3 id="confidentiality">Confidentiality</h3>
+
+<p>This ensures that information is not disclosed to unauthorized individuals, processes, or systems. Techniques to ensure confidentiality include data encryption, username/password authentication, and two-factor authentication.</p>
+
+<h3 id="integrity">Integrity</h3>
+
+<p>Integrity involves maintaining the consistency, accuracy, and trustworthiness of data over its entire lifecycle. Data must not be changed in transit, and steps must be taken to ensure data cannot be altered by unauthorized people (for example, in a breach). Hashing is a common method to verify integrity.</p>
+
+<h3 id="availability">Availability</h3>
+
+<p>This ensures that the information is available when it is needed. This means computing systems used to store and process the information, the security controls used to protect it, and the communication channels used to access it must be functioning correctly. DDoS attacks specifically target Availability.</p>]]></content><author><name></name></author><category term="security" /><summary type="html"><![CDATA[CIA Triad, Authentication, and the basics of digital defense.]]></summary></entry><entry><title type="html">Basic Programming Concepts</title><link href="http://0.0.0.0:4000/blog/programming-concepts" rel="alternate" type="text/html" title="Basic Programming Concepts" /><published>2024-01-01T00:00:00+08:00</published><updated>2024-01-01T00:00:00+08:00</updated><id>http://0.0.0.0:4000/blog/programming-concepts</id><content type="html" xml:base="http://0.0.0.0:4000/blog/programming-concepts"><![CDATA[<h2 id="the-foundation-of-logic">The Foundation of Logic</h2>
+
+<p>Programming is essentially the act of instructing a computer to perform specific tasks. Regardless of the language—be it Python, C++, or JavaScript—certain core concepts remain universal.</p>
+
+<h3 id="variables-and-data-types">Variables and Data Types</h3>
+
+<p>Think of a variable as a storage container. In a warehouse, you might have boxes labeled “Electronics” or “Clothing.” In programming, we have variables labeled <code class="language-plaintext highlighter-rouge">x</code>, <code class="language-plaintext highlighter-rouge">userName</code>, or <code class="language-plaintext highlighter-rouge">is_active</code>.</p>
+
+<ul>
+  <li><strong>Integers:</strong> Whole numbers (e.g., 42).</li>
+  <li><strong>Strings:</strong> Text data (e.g., “Hello World”).</li>
+  <li><strong>Booleans:</strong> True or False values.</li>
+</ul>
+
+<h3 id="control-structures">Control Structures</h3>
+
+<p>Code doesn’t just run from top to bottom; it makes decisions.</p>
+
+<ol>
+  <li><strong>If/Else Statements:</strong> If a condition is met, do A. Otherwise, do B.</li>
+  <li><strong>Loops:</strong> Repeat a task multiple times (For loops, While loops).</li>
+</ol>
+
+<p>Understanding these logical flows is critical for a cyber security analyst to read malicious scripts or automate defense mechanisms.</p>]]></content><author><name></name></author><category term="programming" /><summary type="html"><![CDATA[Understanding variables, loops, and control structures is the first step.]]></summary></entry></feed>

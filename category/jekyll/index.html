@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>jekyll | Low Skill</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blog Seputar IT Programming, Networking, dan Security." />
+<meta property="og:description" content="Blog Seputar IT Programming, Networking, dan Security." />
+<link rel="canonical" href="http://0.0.0.0:4000/category/jekyll/" />
+<meta property="og:url" content="http://0.0.0.0:4000/category/jekyll/" />
+<meta property="og:site_name" content="Low Skill" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="jekyll" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Blog Seputar IT Programming, Networking, dan Security.","headline":"jekyll","url":"http://0.0.0.0:4000/category/jekyll/"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jekyll</title>
+		
+		<!-- Open Graph / Social Media Meta Tags -->
+		<meta property="og:title" content="jekyll" />
+		<meta property="og:description" content="Blog Seputar IT Programming, Networking, dan Security." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://0.0.0.0:4000/category/jekyll/" />
+		
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="jekyll" />
+		<meta name="twitter:description" content="Blog Seputar IT Programming, Networking, dan Security." />
+
+		<script>
+			if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<style>
+			/* =========================================
+               1. BASE STYLE (LIGHT MODE DEFAULT)
+               ========================================= */
+			.driver-popover.cyber-theme {
+				background-color: #ffffff !important;
+				color: #1e293b !important; /* Slate-800 */
+				border: 1px solid #cbd5e1; /* Border abu tipis */
+				border-radius: 12px;
+				font-family: "Courier New", Courier, monospace;
+				box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+				padding: 16px;
+				min-width: 300px;
+				max-width: 400px;
+			}
+
+			/* Judul Light */
+			.cyber-theme .driver-popover-title {
+				font-size: 16px;
+				font-weight: 800;
+				color: #2563eb; /* Biru Profesional */
+				margin-bottom: 8px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+
+			/* Deskripsi Light */
+			.cyber-theme .driver-popover-description {
+				font-size: 13px;
+				line-height: 1.6;
+				color: #475569; /* Slate-600 */
+				margin-bottom: 0;
+			}
+
+			/* Tombol Light */
+			.cyber-theme .driver-popover-footer button {
+				background-color: #f1f5f9 !important; /* Slate-100 */
+				color: #334155 !important;
+				border: 1px solid #cbd5e1 !important;
+				border-radius: 6px;
+				font-family: monospace;
+				padding: 6px 12px;
+				font-size: 11px;
+				font-weight: bold;
+				text-shadow: none;
+			}
+
+			.cyber-theme .driver-popover-footer button:hover {
+				background-color: #e2e8f0 !important;
+				color: #0f172a !important;
+			}
+
+			/* Tombol Close Light */
+			.cyber-theme .driver-popover-close-btn {
+				color: #94a3b8;
+			}
+			.cyber-theme .driver-popover-close-btn:hover {
+				color: #ef4444;
+			}
+
+			/* Panah Light (CSS Variable Driver.js) */
+			.driver-popover.cyber-theme {
+				--driver-popover-bg: #ffffff;
+				--driver-text-color: #1e293b;
+			}
+
+			/* =========================================
+               2. DARK MODE OVERRIDES (HTML.DARK)
+               ========================================= */
+
+			/* Wrapper Dark: Hitam Pekat + Green Glow */
+			html.dark .driver-popover.cyber-theme {
+				background-color: #020617 !important; /* Slate-950 */
+				color: #e2e8f0 !important; /* Slate-200 */
+				border: 1px solid #1e293b;
+				box-shadow: 0 0 25px rgba(34, 197, 94, 0.15); /* Green Glow */
+			}
+
+			/* Judul Dark: Hijau Hacker */
+			html.dark .cyber-theme .driver-popover-title {
+				color: #22c55e;
+			}
+
+			/* Deskripsi Dark */
+			html.dark .cyber-theme .driver-popover-description {
+				color: #94a3b8;
+			}
+
+			/* Tombol Dark */
+			html.dark .cyber-theme .driver-popover-footer button {
+				background-color: #0f172a !important;
+				color: #e2e8f0 !important;
+				border: 1px solid #334155 !important;
+			}
+
+			html.dark .cyber-theme .driver-popover-footer button:hover {
+				background-color: #22c55e !important;
+				color: #000 !important;
+				border-color: #22c55e !important;
+			}
+
+			/* Panah Dark */
+			html.dark .driver-popover.cyber-theme {
+				--driver-popover-bg: #020617;
+				--driver-text-color: #e2e8f0;
+			}
+
+			/* =========================================
+   3. CYBER TABLE STYLES
+   ========================================= */
+			.prose table,
+			main table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.5rem 0;
+				font-size: 0.9rem;
+				font-family: "JetBrains Mono", monospace; /* Memaksa font coding */
+				border: 1px solid #cbd5e1;
+				overflow: hidden;
+				border-radius: 8px;
+			}
+
+			/* Header Table */
+			.prose th,
+			main th {
+				background-color: #f1f5f9; /* Light mode bg */
+				color: #1e293b;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				padding: 12px 16px;
+				text-align: left;
+				border-bottom: 2px solid #2563eb; /* Aksen Biru */
+			}
+
+			/* Body Table */
+			.prose td,
+			main td {
+				padding: 10px 16px;
+				border-bottom: 1px solid #cbd5e1;
+				color: #475569;
+			}
+
+			/* Zebra Striping (Baris Belang-belang) */
+			.prose tr:nth-child(even),
+			main tr:nth-child(even) {
+				background-color: #f8fafc;
+			}
+
+			/* Hover Effect (Cyber Feel) */
+			.prose tr:hover,
+			main tr:hover {
+				background-color: rgba(37, 99, 235, 0.05); /* Biru tipis saat di-hover */
+				transition: background-color 0.2s;
+			}
+
+			/* --- DARK MODE TABLE OVERRIDES --- */
+			html.dark .prose table,
+			html.dark main table {
+				border-color: #1e293b;
+				background-color: #0f172a;
+			}
+
+			html.dark .prose th,
+			html.dark main th {
+				background-color: #1e293b;
+				color: #22c55e; /* Hijau Hacker untuk Header */
+				border-bottom: 2px solid #22c55e;
+			}
+
+			html.dark .prose td,
+			html.dark main td {
+				border-bottom: 1px solid #334155;
+				color: #cbd5e1;
+			}
+
+			html.dark .prose tr:nth-child(even),
+			html.dark main tr:nth-child(even) {
+				background-color: #161b22; /* Belang gelap */
+			}
+
+			html.dark .prose tr:hover,
+			html.dark main tr:hover {
+				background-color: rgba(34, 197, 94, 0.1); /* Hijau tipis saat hover */
+			}
+
+			/* =========================================
+   4. CYBER BLOCKQUOTE STYLES (NO QUOTE / NO ITALIC)
+   ========================================= */
+			.prose blockquote,
+			main blockquote {
+				position: relative;
+				padding: 1rem 1.25rem; /* Padding standar, tidak perlu space untuk icon */
+				margin: 1.5rem 0;
+
+				/* Warna Background Light */
+				background: #f1f5f9;
+
+				/* Border Kiri */
+				border-left: 4px solid #2563eb; /* Biru */
+				border-radius: 4px; /* Sudut sedikit tajam (Cyber look) */
+
+				/* Text Style */
+				font-style: normal; /* <--- WAJIB: Agar tidak miring */
+				font-family: "JetBrains Mono", monospace; /* Opsional: Biar seperti log sistem */
+				font-size: 0.95rem;
+				color: #334155; /* Warna teks yang kontras */
+
+				/* Hapus bayangan default biar lebih flat/clean */
+				box-shadow: none;
+			}
+
+			/* HAPUS ICON KUTIP */
+			.prose blockquote::before,
+			main blockquote::before {
+				content: none !important; /* Mematikan tanda kutip */
+			}
+
+			/* Opsi: Tambahkan simbol terminal kecil (Optional) */
+			/* Jika ingin ada tanda ">_" kecil di awal paragraf */
+			.prose blockquote p::before {
+				/* content: ">_ "; */
+				color: #2563eb;
+				font-weight: bold;
+			}
+
+			/* --- DARK MODE QUOTE OVERRIDES --- */
+			html.dark .prose blockquote,
+			html.dark main blockquote {
+				background: #1e293b; /* Dark slate */
+				border-left-color: #c084fc; /* Ungu Neon */
+				color: #e2e8f0; /* Teks terang */
+				border: 1px solid #334155; /* Border halus keliling */
+				border-left: 4px solid #c084fc; /* Timpa border kiri */
+			}
+
+			html.dark .prose blockquote p::before {
+				color: #c084fc;
+			}
+
+			@media (max-width: 640px) {
+				.prose table, main table {
+					display: block;
+					overflow-x: auto;
+					font-size: 0.8rem;
+					margin: 1rem 0;
+				}
+				.prose th, main th {
+					padding: 8px 10px;
+				}
+				.prose td, main td {
+					padding: 8px 10px;
+				}
+				.prose blockquote, main blockquote {
+					padding: 0.75rem 1rem;
+					margin: 1rem 0;
+					font-size: 0.85rem;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="font-mono antialiased transition-colors duration-300 bg-cyber-light text-slate-800 dark:bg-cyber-base dark:text-cyan-50 selection:bg-cyber-primary selection:text-white scanline">
+		<div class="fixed inset-0 pointer-events-none bg-grid z-[-1]"></div>
+
+		<nav class="sticky top-0 z-50 w-full border-b border-cyber-primary/30 backdrop-blur-md bg-white/80 dark:bg-cyber-darkacc/80">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<a href="/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
+						<div class="w-3 h-3 bg-cyber-primary rounded-full animate-pulse-fast group-hover:shadow-neon"></div>
+						<span class="font-bold text-xl tracking-tighter text-cyber-primary group-hover:text-cyber-glow transition-all"> Low Skill </span>
+					</a>
+
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-1">
+							<a href="/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Beranda</a>
+							<a href="/materi/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Materi</a>
+							<a href="/latihan/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Latihan</a>
+							<a href="/project/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Project</a>
+							<a href="/about/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Tentang</a>
+						</div>
+					</div>
+
+					<div class="flex items-center gap-2">
+						<button onclick="toggleSearch()" class="p-2 rounded-md border border-cyber-primary/50 text-cyber-primary hover:bg-cyber-primary/20 hover:shadow-neon transition-all focus:outline-none" title="Cari Artikel">
+							<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+							</svg>
+						</button>
+
+						<button id="theme-toggle" class="p-2 rounded-md border border-cyber-primary/50 hover:bg-cyber-primary/20 hover:shadow-neon transition-all focus:outline-none">
+							<svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewbox="0 0 20 20">
+								<path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+							</svg>
+							<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewbox="0 0 20 20">
+								<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+							</svg>
+						</button>
+
+						<button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-md border border-cyber-primary/50 text-cyber-primary hover:bg-cyber-primary/20 focus:outline-none">
+							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="mobile-menu" class="hidden md:hidden border-t border-cyber-primary/30 bg-white/95 dark:bg-[#050505]/95 backdrop-blur-xl absolute w-full left-0 top-16">
+				<div class="px-4 pt-2 pb-4 space-y-1 font-mono text-sm">
+					<a href="/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Beranda</a>
+					<a href="/materi/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Materi</a>
+					<a href="/latihan/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Latihan</a>
+					<a href="/project/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Project</a>
+					<a href="/about/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Tentang</a>
+				</div>
+			</div>
+		</nav>
+
+		<div id="search-modal" class="fixed inset-0 z-[100] hidden">
+			<div class="absolute inset-0 bg-slate-900/90 backdrop-blur-sm transition-opacity" onclick="toggleSearch()"></div>
+
+			<div class="relative z-10 w-full max-w-3xl mx-auto mt-20 px-4">
+				<div class="bg-white dark:bg-[#0d1117] border-2 border-cyber-primary rounded-xl shadow-[0_0_50px_rgba(14,165,233,0.25)] overflow-hidden transform transition-all">
+					<div class="flex items-center gap-5 border-b border-slate-200 dark:border-slate-800 p-6 bg-slate-50/50 dark:bg-white/5">
+						<svg class="w-8 h-8 text-cyber-primary flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+						</svg>
+
+						<input type="text" id="search-input" placeholder="Cari artikel..." class="w-full bg-transparent border-none focus:ring-0 text-xl font-mono font-bold text-slate-800 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 h-12 p-0 tracking-wider">
+
+						<button onclick="toggleSearch()" class="flex-shrink-0 text-xs font-mono border border-slate-300 dark:border-slate-600 bg-white dark:bg-black px-3 py-1.5 rounded text-slate-500 hover:text-cyber-primary hover:border-cyber-primary transition-all shadow-sm">
+							ESC
+						</button>
+					</div>
+
+					<div id="search-results" class="max-h-[60vh] overflow-y-auto custom-scrollbar p-4 space-y-2">
+						<div class="py-12 text-center">
+							<span class="inline-block p-3 rounded-full bg-slate-100 dark:bg-slate-800 mb-3 text-slate-400">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+							</span>
+							<p class="text-slate-500 font-mono text-sm">Ketik kata kunci untuk mencari...</p>
+						</div>
+					</div>
+
+					<div class="bg-slate-100 dark:bg-[#050505] py-3 px-6 text-right border-t border-slate-200 dark:border-slate-800">
+						<span class="text-[10px] font-mono text-slate-400 flex justify-end items-center gap-2">
+							<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+							Total: 38 Artikel
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16"><header class="mb-10">
+	<h1 class="text-3xl md:text-5xl font-bold mb-2 font-mono uppercase">
+<span class="text-cyber-primary">•</span> Arsip: <span class="text-cyber-glow">jekyll</span>
+</h1>
+	<p class="text-slate-500 dark:text-slate-400 max-w-2xl border-l-2 border-cyber-primary pl-4">Arsip untuk category: jekyll. Ditemukan 1 artikel.</p>
+</header>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+	
+	<article class="relative flex flex-col h-full bg-white dark:bg-cyber-darkacc border border-cyber-primary/40 shadow-sm hover:shadow-neon hover:-translate-y-1 transition-all duration-300 rounded-lg group overflow-hidden">
+		<div class="relative h-48 w-full overflow-hidden border-b border-cyber-primary/30 bg-gray-900">
+			
+			<div class="w-full h-full flex flex-col items-center justify-center text-cyber-primary/30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-gray-900 to-black">
+				<span class="text-xs font-mono tracking-widest">Gambar Tidak Tersedia</span>
+			</div>
+			
+		</div>
+
+		<div class="p-5 flex-1 flex flex-col">
+			<div class="flex items-center gap-2 mb-2 text-[10px] text-slate-500 dark:text-slate-400 font-mono">
+				<span class="text-cyber-primary">01-12-2025</span>
+			</div>
+			<h3 class="text-lg font-bold mb-3 leading-tight group-hover:text-cyber-glow transition-colors line-clamp-2">
+				<a href="/blog/welcome-to-jekyll">Welcome to Jekyll!</a>
+			</h3>
+			<a href="/blog/welcome-to-jekyll" class="mt-auto text-xs font-bold text-cyber-primary hover:underline">Baca Selengkapnya →</a>
+		</div>
+	</article>
+	
+</div>
+</main>
+
+		<footer class="border-t border-cyber-primary/30 bg-white/80 dark:bg-[#050505]/90 backdrop-blur-md mt-12 sm:mt-20 md:mt-28">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-6 sm:pb-8">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 sm:mb-12">
+					<div class="space-y-4">
+						<a href="/" class="flex items-center gap-2 group">
+							<div class="w-6 h-6 bg-cyber-primary text-black flex items-center justify-center font-bold font-mono rounded text-xs">IT</div>
+							<span class="font-bold text-lg font-mono text-slate-800 dark:text-white tracking-tighter"> Low Skill </span>
+						</a>
+						<p class="text-sm text-slate-500 dark:text-slate-400 font-mono leading-relaxed">
+							Dokumentasi pembelajaran keamanan siber, pemrograman, dan teknologi IT. <br>
+							<span class="text-xs opacity-50">"Belajar, Berbagi, dan Berkembang."</span>
+						</p>
+
+						<div class="flex gap-3 pt-2">
+							<a href="https://github.com/makloheker" target="_blank" class="text-slate-400 hover:text-cyber-primary transition-colors" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+							<a href="https://linkedin.com/in/anggaphtml" target="_blank" class="text-slate-400 hover:text-cyber-primary transition-colors" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							NAVIGASI
+						</h3>
+						<ul class="space-y-3 font-mono text-sm text-slate-600 dark:text-slate-400">
+							<li><a href="/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Beranda</a></li>
+							<li><a href="/about/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Tentang</a></li>
+							<li><a href="/project/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Project</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							KATEGORI
+						</h3>
+						<ul class="space-y-3 font-mono text-sm text-slate-600 dark:text-slate-400">
+							<li><a href="/materi/programming/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Programming</a></li>
+							<li><a href="/materi/pentesting/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Pentesting</a></li>
+							<li><a href="/latihan/ctf/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">CTF Challenges</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							INFORMASI
+						</h3>
+						<div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-black/50 rounded-lg">
+							<div class="flex items-center justify-between mb-2">
+								<span class="text-xs font-mono text-slate-500">Status:</span>
+								<span class="text-xs font-mono text-green-500 font-bold flex items-center gap-1">
+									<span class="relative flex h-2 w-2">
+										<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+										<span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+									</span>
+									Aktif
+								</span>
+							</div>
+							<div class="flex items-center justify-between mb-2">
+								<span class="text-xs font-mono text-slate-500">Akses:</span>
+								<span class="text-xs font-mono text-cyber-primary">Pengunjung</span>
+							</div>
+							<div class="flex items-center justify-between">
+								<span class="text-xs font-mono text-slate-500">Versi:</span>
+								<span class="text-xs font-mono text-slate-400">v4.0.1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+					<div class="text-xs font-mono text-slate-500 text-center md:text-left">
+						<p>© 2026 Angga Saputra. All Rights Reserved.</p>
+					</div>
+
+					<div class="flex items-center gap-6 text-[10px] font-mono font-bold tracking-wider text-slate-500">
+						<a href="/privacy/" class="hover:text-cyber-primary transition-colors">Kebijakan Privasi</a>
+						<a href="/disclaimer/" class="hover:text-red-500 transition-colors">Penafian</a>
+					</div>
+
+					<div class="flex items-center gap-4 text-xs font-mono text-slate-500">
+						<span>Dibuat dengan <a href="https://jekyllrb.com/" target="_blank" class="hover:text-cyber-primary transition-colors" rel="noopener noreferrer">Jekyll</a></span>
+						<span>•</span>
+						<span>Didesain dengan <a href="https://tailwindcss.com/" target="_blank" class="hover:text-cyber-primary transition-colors" rel="noopener noreferrer">Tailwind</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			// Bagian 2: Logika Interaktif (Menunggu elemen ada dulu)
+			document.addEventListener("DOMContentLoaded", function () {
+				// 1. Ambil Element
+				const themeToggleBtn = document.getElementById("theme-toggle");
+				const darkIcon = document.getElementById("theme-toggle-dark-icon");
+				const lightIcon = document.getElementById("theme-toggle-light-icon");
+
+				// Safety Check: Pastikan tombol ada (untuk mencegah error di halaman tanpa navbar)
+				if (!themeToggleBtn) return;
+
+				// 2. Sinkronisasi Ikon Awal
+				// Cek apakah mode dark sedang aktif (hasil dari script di head tadi)
+				if (document.documentElement.classList.contains("dark")) {
+					lightIcon.classList.remove("hidden");
+					darkIcon.classList.add("hidden");
+				} else {
+					lightIcon.classList.add("hidden");
+					darkIcon.classList.remove("hidden");
+				}
+
+				// 3. Event Listener Tombol
+				themeToggleBtn.addEventListener("click", function () {
+					// Toggle Ikon
+					darkIcon.classList.toggle("hidden");
+					lightIcon.classList.toggle("hidden");
+
+					// Toggle Tema & Simpan ke LocalStorage
+					if (localStorage.getItem("color-theme")) {
+						if (localStorage.getItem("color-theme") === "light") {
+							document.documentElement.classList.add("dark");
+							localStorage.setItem("color-theme", "dark");
+						} else {
+							document.documentElement.classList.remove("dark");
+							localStorage.setItem("color-theme", "light");
+						}
+					} else {
+						if (document.documentElement.classList.contains("dark")) {
+							document.documentElement.classList.remove("dark");
+							localStorage.setItem("color-theme", "light");
+						} else {
+							document.documentElement.classList.add("dark");
+							localStorage.setItem("color-theme", "dark");
+						}
+					}
+				});
+
+				// 4. Mobile Menu Toggle (Opsional jika masih error)
+				window.toggleMobileMenu = function () {
+					const menu = document.getElementById("mobile-menu");
+					if (menu) menu.classList.toggle("hidden");
+				};
+			});
+		</script>
+		<script>
+			let searchData = [];
+
+			// 1. Toggle Modal
+			function toggleSearch() {
+				const modal = document.getElementById("search-modal");
+				const input = document.getElementById("search-input");
+
+				modal.classList.toggle("hidden");
+
+				if (!modal.classList.contains("hidden")) {
+					input.focus();
+					// Load data only once when opened
+					if (searchData.length === 0) {
+						fetch('/search.json')
+							.then((response) => response.json())
+							.then((data) => {
+								searchData = data;
+							});
+					}
+				} else {
+					// Clear input when closed
+					input.value = "";
+					document.getElementById("search-results").innerHTML = '<div class="p-8 text-center text-slate-500 font-mono text-sm">> WAITING_FOR_INPUT...</div>';
+				}
+			}
+
+			// 2. Filter Logic
+			document.getElementById("search-input").addEventListener("input", function (e) {
+				const query = e.target.value.toLowerCase();
+				const resultsContainer = document.getElementById("search-results");
+
+				if (query.length < 2) {
+					resultsContainer.innerHTML = '<div class="p-8 text-center text-slate-500 font-mono text-sm">> TYPE_MORE_CHARS...</div>';
+					return;
+				}
+
+				const results = searchData.filter((item) => {
+					return item.title.toLowerCase().includes(query) || item.url.toLowerCase().includes(query);
+				});
+
+				if (results.length > 0) {
+					let html = '<ul class="space-y-1">';
+					results.forEach((item) => {
+						// Badge color logic
+						let badgeColor = "bg-slate-100 text-slate-600 border-slate-300"; // Default
+						if (item.category === "MATERI_DB") badgeColor = "bg-blue-500/10 text-blue-500 border-blue-500/20";
+						if (item.category === "TRAINING") badgeColor = "bg-red-500/10 text-red-500 border-red-500/20";
+						if (item.category === "BLOG_LOG") badgeColor = "bg-green-500/10 text-green-500 border-green-500/20";
+
+						html += `
+                            <li>
+                                <a href="${item.url}" class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-white/5 group transition-colors">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-sm font-bold font-mono text-slate-800 dark:text-slate-200 group-hover:text-cyber-primary highlight-text">${item.title}</span>
+                                        <span class="text-[10px] font-mono px-2 py-0.5 rounded border ${badgeColor}">${item.category}</span>
+                                    </div>
+                                    <span class="text-xs font-mono text-slate-400">${item.url}</span>
+                                </a>
+                            </li>
+                        `;
+					});
+					html += "</ul>";
+					resultsContainer.innerHTML = html;
+				} else {
+					resultsContainer.innerHTML = '<div class="p-8 text-center text-red-400 font-mono text-sm">[!] NO_MATCH_FOUND</div>';
+				}
+			});
+
+			// Close on ESC
+			document.addEventListener("keydown", function (e) {
+				if (e.key === "Escape") {
+					const modal = document.getElementById("search-modal");
+					if (!modal.classList.contains("hidden")) toggleSearch();
+				}
+				// Shortcut Ctrl+K to open
+				if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+					e.preventDefault();
+					toggleSearch();
+				}
+			});
+		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const codeBlocks = document.querySelectorAll("pre");
+				codeBlocks.forEach((block) => {
+					const wrapper = document.createElement("div");
+					wrapper.className = "relative group mb-6 mt-2";
+					block.parentNode.insertBefore(wrapper, block);
+					wrapper.appendChild(block);
+
+					const header = document.createElement("div");
+					header.className =
+						"absolute top-0 left-0 right-0 h-8 bg-slate-100 dark:bg-[#161b22] border-b border-slate-200 dark:border-[#30363d] rounded-t-lg flex items-center px-4 select-none transition-colors duration-300";
+					header.innerHTML = `<div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80 border border-red-600/20"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80 border border-yellow-600/20"></span><span class="w-3 h-3 rounded-full bg-green-500/80 border border-green-600/20"></span></div><div class="ml-4 text-[10px] font-mono text-slate-500 dark:text-slate-400 font-bold tracking-wider">Kode</div>`;
+					block.style.paddingTop = "3rem";
+					wrapper.appendChild(header);
+
+					const copyBtn = document.createElement("button");
+					copyBtn.className =
+						"absolute top-1.5 right-2 px-2 py-1 rounded text-xs font-mono transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1 border bg-white border-slate-300 text-slate-600 hover:bg-slate-100 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white dark:hover:border-cyber-primary";
+					copyBtn.innerHTML = `<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg><span>SALIN</span>`;
+
+					copyBtn.addEventListener("click", () => {
+						const code = block.querySelector("code").innerText;
+						navigator.clipboard.writeText(code).then(() => {
+							copyBtn.innerHTML = `<span class="text-green-600 dark:text-green-400 font-bold">TERSALIN!</span>`;
+							setTimeout(() => {
+								copyBtn.innerHTML = `<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg><span>SALIN</span>`;
+							}, 2000);
+						});
+					});
+					wrapper.appendChild(copyBtn);
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Grid Lines -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid)" />
+  <!-- Glowing Nodes & Connections -->
+  <path d="M 150 200 L 300 120 L 500 120 L 650 200 L 500 280 L 300 280 Z" fill="none" stroke="#0ea5e9" stroke-width="3" opacity="0.6"/>
+  <path d="M 300 120 L 500 280 M 500 120 L 300 280" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
+  <circle cx="400" cy="200" r="45" fill="#0f172a" stroke="#0ea5e9" stroke-width="4"/>
+  <!-- Center Icon -->
+  <text x="400" y="208" font-family="monospace" font-size="24" font-weight="bold" fill="#0ea5e9" text-anchor="middle">NET</text>
+  <!-- Nodes -->
+  <circle cx="150" cy="200" r="18" fill="#0ea5e9"/>
+  <circle cx="300" cy="120" r="18" fill="#38bdf8"/>
+  <circle cx="500" cy="120" r="18" fill="#38bdf8"/>
+  <circle cx="650" cy="200" r="18" fill="#0ea5e9"/>
+  <circle cx="500" cy="280" r="18" fill="#38bdf8"/>
+  <circle cx="300" cy="280" r="18" fill="#38bdf8"/>
+  <!-- Text Label -->
+  <text x="400" y="340" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="bold" fill="#f8fafc" text-anchor="middle">COMPUTER NETWORKING</text>
+</svg>

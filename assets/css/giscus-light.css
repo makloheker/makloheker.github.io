@@ -1,0 +1,50 @@
+/*! Custom Giscus Theme for Cyber Blog (Light Mode / Paper Mode) */
+main {
+	--font-family-sans: "JetBrains Mono", monospace;
+	--font-family-mono: "JetBrains Mono", monospace;
+
+	/* Background Transparan (Agar Grid di website terlihat) */
+	--color-canvas-default: transparent;
+	--color-canvas-overlay: #ffffff;
+	--color-canvas-subtle: transparent;
+
+	/* Border Abu-abu kebiruan */
+	--color-border-default: #cbd5e1;
+	--color-border-primary: #0ea5e9;
+	--color-border-muted: #e2e8f0;
+
+	/* Teks Gelap (Slate 800) */
+	--color-fg-default: #1e293b;
+	--color-fg-muted: #64748b;
+	--color-fg-subtle: #94a3b8;
+
+	/* Aksen Tetap Biru Cyber */
+	--color-accent-fg: #0ea5e9;
+	--color-accent-emphasis: #0ea5e9;
+	--color-accent-muted: rgba(14, 165, 233, 0.4);
+
+	/* Tombol (Light Style) */
+	--color-btn-text: #0f172a;
+	--color-btn-bg: #ffffff;
+	--color-btn-border: #cbd5e1;
+	--color-btn-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	--color-btn-inset-shadow: none;
+	--color-btn-hover-bg: #f8fafc;
+	--color-btn-hover-border: #94a3b8;
+
+	/* Tombol Primary (Submit) */
+	--color-btn-primary-bg: #0ea5e9;
+	--color-btn-primary-border: #0ea5e9;
+	--color-btn-primary-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	--color-btn-primary-hover-bg: #0284c7;
+	--color-btn-primary-text: #ffffff;
+
+	/* Input Field */
+	--color-input-bg: #ffffff;
+	--color-input-border: #cbd5e1;
+}
+
+.gsc-comment-box {
+	border-radius: 0px;
+	border: 1px solid var(--color-border-default);
+}

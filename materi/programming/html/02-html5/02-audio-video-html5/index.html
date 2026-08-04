@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Audio &amp; Video HTML5 | Low Skill</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Audio &amp; Video HTML5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Multimedia Tanpa Plugin" />
+<meta property="og:description" content="Multimedia Tanpa Plugin" />
+<link rel="canonical" href="http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" />
+<meta property="og:url" content="http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" />
+<meta property="og:site_name" content="Low Skill" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-07-31T16:16:02+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Audio &amp; Video HTML5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-07-31T16:16:02+08:00","datePublished":"2026-07-31T16:16:02+08:00","description":"Multimedia Tanpa Plugin","headline":"Audio &amp; Video HTML5","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/"},"url":"http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Audio & Video HTML5</title>
+		
+		<!-- Open Graph / Social Media Meta Tags -->
+		<meta property="og:title" content="Audio & Video HTML5" />
+		<meta property="og:description" content="Blog Seputar IT Programming, Networking, dan Security." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" />
+		
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Audio & Video HTML5" />
+		<meta name="twitter:description" content="Blog Seputar IT Programming, Networking, dan Security." />
+
+		<script>
+			if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<style>
+			/* =========================================
+               1. BASE STYLE (LIGHT MODE DEFAULT)
+               ========================================= */
+			.driver-popover.cyber-theme {
+				background-color: #ffffff !important;
+				color: #1e293b !important; /* Slate-800 */
+				border: 1px solid #cbd5e1; /* Border abu tipis */
+				border-radius: 12px;
+				font-family: "Courier New", Courier, monospace;
+				box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+				padding: 16px;
+				min-width: 300px;
+				max-width: 400px;
+			}
+
+			/* Judul Light */
+			.cyber-theme .driver-popover-title {
+				font-size: 16px;
+				font-weight: 800;
+				color: #2563eb; /* Biru Profesional */
+				margin-bottom: 8px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+
+			/* Deskripsi Light */
+			.cyber-theme .driver-popover-description {
+				font-size: 13px;
+				line-height: 1.6;
+				color: #475569; /* Slate-600 */
+				margin-bottom: 0;
+			}
+
+			/* Tombol Light */
+			.cyber-theme .driver-popover-footer button {
+				background-color: #f1f5f9 !important; /* Slate-100 */
+				color: #334155 !important;
+				border: 1px solid #cbd5e1 !important;
+				border-radius: 6px;
+				font-family: monospace;
+				padding: 6px 12px;
+				font-size: 11px;
+				font-weight: bold;
+				text-shadow: none;
+			}
+
+			.cyber-theme .driver-popover-footer button:hover {
+				background-color: #e2e8f0 !important;
+				color: #0f172a !important;
+			}
+
+			/* Tombol Close Light */
+			.cyber-theme .driver-popover-close-btn {
+				color: #94a3b8;
+			}
+			.cyber-theme .driver-popover-close-btn:hover {
+				color: #ef4444;
+			}
+
+			/* Panah Light (CSS Variable Driver.js) */
+			.driver-popover.cyber-theme {
+				--driver-popover-bg: #ffffff;
+				--driver-text-color: #1e293b;
+			}
+
+			/* =========================================
+               2. DARK MODE OVERRIDES (HTML.DARK)
+               ========================================= */
+
+			/* Wrapper Dark: Hitam Pekat + Green Glow */
+			html.dark .driver-popover.cyber-theme {
+				background-color: #020617 !important; /* Slate-950 */
+				color: #e2e8f0 !important; /* Slate-200 */
+				border: 1px solid #1e293b;
+				box-shadow: 0 0 25px rgba(34, 197, 94, 0.15); /* Green Glow */
+			}
+
+			/* Judul Dark: Hijau Hacker */
+			html.dark .cyber-theme .driver-popover-title {
+				color: #22c55e;
+			}
+
+			/* Deskripsi Dark */
+			html.dark .cyber-theme .driver-popover-description {
+				color: #94a3b8;
+			}
+
+			/* Tombol Dark */
+			html.dark .cyber-theme .driver-popover-footer button {
+				background-color: #0f172a !important;
+				color: #e2e8f0 !important;
+				border: 1px solid #334155 !important;
+			}
+
+			html.dark .cyber-theme .driver-popover-footer button:hover {
+				background-color: #22c55e !important;
+				color: #000 !important;
+				border-color: #22c55e !important;
+			}
+
+			/* Panah Dark */
+			html.dark .driver-popover.cyber-theme {
+				--driver-popover-bg: #020617;
+				--driver-text-color: #e2e8f0;
+			}
+
+			/* =========================================
+   3. CYBER TABLE STYLES
+   ========================================= */
+			.prose table,
+			main table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 1.5rem 0;
+				font-size: 0.9rem;
+				font-family: "JetBrains Mono", monospace; /* Memaksa font coding */
+				border: 1px solid #cbd5e1;
+				overflow: hidden;
+				border-radius: 8px;
+			}
+
+			/* Header Table */
+			.prose th,
+			main th {
+				background-color: #f1f5f9; /* Light mode bg */
+				color: #1e293b;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				padding: 12px 16px;
+				text-align: left;
+				border-bottom: 2px solid #2563eb; /* Aksen Biru */
+			}
+
+			/* Body Table */
+			.prose td,
+			main td {
+				padding: 10px 16px;
+				border-bottom: 1px solid #cbd5e1;
+				color: #475569;
+			}
+
+			/* Zebra Striping (Baris Belang-belang) */
+			.prose tr:nth-child(even),
+			main tr:nth-child(even) {
+				background-color: #f8fafc;
+			}
+
+			/* Hover Effect (Cyber Feel) */
+			.prose tr:hover,
+			main tr:hover {
+				background-color: rgba(37, 99, 235, 0.05); /* Biru tipis saat di-hover */
+				transition: background-color 0.2s;
+			}
+
+			/* --- DARK MODE TABLE OVERRIDES --- */
+			html.dark .prose table,
+			html.dark main table {
+				border-color: #1e293b;
+				background-color: #0f172a;
+			}
+
+			html.dark .prose th,
+			html.dark main th {
+				background-color: #1e293b;
+				color: #22c55e; /* Hijau Hacker untuk Header */
+				border-bottom: 2px solid #22c55e;
+			}
+
+			html.dark .prose td,
+			html.dark main td {
+				border-bottom: 1px solid #334155;
+				color: #cbd5e1;
+			}
+
+			html.dark .prose tr:nth-child(even),
+			html.dark main tr:nth-child(even) {
+				background-color: #161b22; /* Belang gelap */
+			}
+
+			html.dark .prose tr:hover,
+			html.dark main tr:hover {
+				background-color: rgba(34, 197, 94, 0.1); /* Hijau tipis saat hover */
+			}
+
+			/* =========================================
+   4. CYBER BLOCKQUOTE STYLES (NO QUOTE / NO ITALIC)
+   ========================================= */
+			.prose blockquote,
+			main blockquote {
+				position: relative;
+				padding: 1rem 1.25rem; /* Padding standar, tidak perlu space untuk icon */
+				margin: 1.5rem 0;
+
+				/* Warna Background Light */
+				background: #f1f5f9;
+
+				/* Border Kiri */
+				border-left: 4px solid #2563eb; /* Biru */
+				border-radius: 4px; /* Sudut sedikit tajam (Cyber look) */
+
+				/* Text Style */
+				font-style: normal; /* <--- WAJIB: Agar tidak miring */
+				font-family: "JetBrains Mono", monospace; /* Opsional: Biar seperti log sistem */
+				font-size: 0.95rem;
+				color: #334155; /* Warna teks yang kontras */
+
+				/* Hapus bayangan default biar lebih flat/clean */
+				box-shadow: none;
+			}
+
+			/* HAPUS ICON KUTIP */
+			.prose blockquote::before,
+			main blockquote::before {
+				content: none !important; /* Mematikan tanda kutip */
+			}
+
+			/* Opsi: Tambahkan simbol terminal kecil (Optional) */
+			/* Jika ingin ada tanda ">_" kecil di awal paragraf */
+			.prose blockquote p::before {
+				/* content: ">_ "; */
+				color: #2563eb;
+				font-weight: bold;
+			}
+
+			/* --- DARK MODE QUOTE OVERRIDES --- */
+			html.dark .prose blockquote,
+			html.dark main blockquote {
+				background: #1e293b; /* Dark slate */
+				border-left-color: #c084fc; /* Ungu Neon */
+				color: #e2e8f0; /* Teks terang */
+				border: 1px solid #334155; /* Border halus keliling */
+				border-left: 4px solid #c084fc; /* Timpa border kiri */
+			}
+
+			html.dark .prose blockquote p::before {
+				color: #c084fc;
+			}
+
+			@media (max-width: 640px) {
+				.prose table, main table {
+					display: block;
+					overflow-x: auto;
+					font-size: 0.8rem;
+					margin: 1rem 0;
+				}
+				.prose th, main th {
+					padding: 8px 10px;
+				}
+				.prose td, main td {
+					padding: 8px 10px;
+				}
+				.prose blockquote, main blockquote {
+					padding: 0.75rem 1rem;
+					margin: 1rem 0;
+					font-size: 0.85rem;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="font-mono antialiased transition-colors duration-300 bg-cyber-light text-slate-800 dark:bg-cyber-base dark:text-cyan-50 selection:bg-cyber-primary selection:text-white scanline">
+		<div class="fixed inset-0 pointer-events-none bg-grid z-[-1]"></div>
+
+		<nav class="sticky top-0 z-50 w-full border-b border-cyber-primary/30 backdrop-blur-md bg-white/80 dark:bg-cyber-darkacc/80">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<a href="/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
+						<div class="w-3 h-3 bg-cyber-primary rounded-full animate-pulse-fast group-hover:shadow-neon"></div>
+						<span class="font-bold text-xl tracking-tighter text-cyber-primary group-hover:text-cyber-glow transition-all"> Low Skill </span>
+					</a>
+
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-1">
+							<a href="/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Beranda</a>
+							<a href="/materi/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Materi</a>
+							<a href="/latihan/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Latihan</a>
+							<a href="/project/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Project</a>
+							<a href="/about/" class="px-3 py-2 rounded-md text-sm font-bold hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">Tentang</a>
+						</div>
+					</div>
+
+					<div class="flex items-center gap-2">
+						<button onclick="toggleSearch()" class="p-2 rounded-md border border-cyber-primary/50 text-cyber-primary hover:bg-cyber-primary/20 hover:shadow-neon transition-all focus:outline-none" title="Cari Artikel">
+							<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+							</svg>
+						</button>
+
+						<button id="theme-toggle" class="p-2 rounded-md border border-cyber-primary/50 hover:bg-cyber-primary/20 hover:shadow-neon transition-all focus:outline-none">
+							<svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewbox="0 0 20 20">
+								<path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+							</svg>
+							<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewbox="0 0 20 20">
+								<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+							</svg>
+						</button>
+
+						<button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-md border border-cyber-primary/50 text-cyber-primary hover:bg-cyber-primary/20 focus:outline-none">
+							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="mobile-menu" class="hidden md:hidden border-t border-cyber-primary/30 bg-white/95 dark:bg-[#050505]/95 backdrop-blur-xl absolute w-full left-0 top-16">
+				<div class="px-4 pt-2 pb-4 space-y-1 font-mono text-sm">
+					<a href="/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Beranda</a>
+					<a href="/materi/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Materi</a>
+					<a href="/latihan/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Latihan</a>
+					<a href="/project/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Project</a>
+					<a href="/about/" class="block px-3 py-3 rounded hover:bg-cyber-primary/10 hover:text-cyber-primary transition-colors border-l-2 border-transparent hover:border-cyber-primary">Tentang</a>
+				</div>
+			</div>
+		</nav>
+
+		<div id="search-modal" class="fixed inset-0 z-[100] hidden">
+			<div class="absolute inset-0 bg-slate-900/90 backdrop-blur-sm transition-opacity" onclick="toggleSearch()"></div>
+
+			<div class="relative z-10 w-full max-w-3xl mx-auto mt-20 px-4">
+				<div class="bg-white dark:bg-[#0d1117] border-2 border-cyber-primary rounded-xl shadow-[0_0_50px_rgba(14,165,233,0.25)] overflow-hidden transform transition-all">
+					<div class="flex items-center gap-5 border-b border-slate-200 dark:border-slate-800 p-6 bg-slate-50/50 dark:bg-white/5">
+						<svg class="w-8 h-8 text-cyber-primary flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+						</svg>
+
+						<input type="text" id="search-input" placeholder="Cari artikel..." class="w-full bg-transparent border-none focus:ring-0 text-xl font-mono font-bold text-slate-800 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 h-12 p-0 tracking-wider">
+
+						<button onclick="toggleSearch()" class="flex-shrink-0 text-xs font-mono border border-slate-300 dark:border-slate-600 bg-white dark:bg-black px-3 py-1.5 rounded text-slate-500 hover:text-cyber-primary hover:border-cyber-primary transition-all shadow-sm">
+							ESC
+						</button>
+					</div>
+
+					<div id="search-results" class="max-h-[60vh] overflow-y-auto custom-scrollbar p-4 space-y-2">
+						<div class="py-12 text-center">
+							<span class="inline-block p-3 rounded-full bg-slate-100 dark:bg-slate-800 mb-3 text-slate-400">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+							</span>
+							<p class="text-slate-500 font-mono text-sm">Ketik kata kunci untuk mencari...</p>
+						</div>
+					</div>
+
+					<div class="bg-slate-100 dark:bg-[#050505] py-3 px-6 text-right border-t border-slate-200 dark:border-slate-800">
+						<span class="text-[10px] font-mono text-slate-400 flex justify-end items-center gap-2">
+							<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+							Total: 38 Artikel
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16">                                              
+ 
+<div id="lightbox-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+	<div id="lightbox-backdrop" class="absolute inset-0 backdrop-blur-xl bg-grid cursor-pointer transition-colors duration-300" onclick="closeLightbox()"></div>
+	<div class="relative z-10 max-w-7xl max-h-screen w-full flex flex-col items-center justify-center pointer-events-none">
+		<button id="lightbox-close-btn" onclick="closeLightbox()" class="absolute -top-10 right-0 pointer-events-auto hover:text-cyber-primary transition-colors flex items-center gap-2 group">
+			<span class="text-xs font-mono group-hover:underline">[Tutup]</span>
+			<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+		</button>
+		<img id="lightbox-img" src="" alt="Gambar" class="pointer-events-auto max-h-[85vh] w-auto object-contain rounded border border-cyber-primary shadow-[0_0_50px_rgba(14,165,233,0.3)]">
+		<div id="lightbox-caption" class="mt-4 px-4 py-2 font-mono text-xs sm:text-sm tracking-wider rounded shadow-md border transition-colors duration-300"></div>
+	</div>
+</div>
+
+<div class="relative">
+	<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+		<article class="lg:col-span-9 w-full min-w-0">
+			<div class="bg-white/60 dark:bg-slate-900/60 p-5 sm:p-8 md:p-10 rounded-xl sm:rounded-2xl">
+				<header class="mb-4 sm:mb-8 border-b border-cyber-primary/30 pb-4 sm:pb-8">
+					<div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-cyber-primary mb-3 sm:mb-4 font-mono overflow-x-auto whitespace-nowrap">
+						<span class="opacity-50">Beranda</span>
+
+						
+						<span class="opacity-50">/</span>
+						<a href="/materi" class="font-bold hover:text-cyber-glow underline-offset-4">MATERI</a>
+						<span class="opacity-50">/</span>
+						<span class="font-bold text-cyber-glow decoration-cyber-primary/50 underline-offset-4">HTML</span>
+						
+
+						<span class="mx-2 opacity-30">|</span>
+						<time datetime="2026-07-31T16:16:02+08:00" class="text-slate-500"> 31-07-2026 </time>
+						<span class="mx-2 opacity-30">|</span>
+						
+						<span class="text-slate-500 inline-flex items-center gap-1">
+							<svg class="w-3.5 h-3.5 inline opacity-70" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+							2 menit baca
+						</span>
+					</div>
+
+					<h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-slate-900 dark:text-white leading-tight font-mono">Audio &amp; Video HTML5</h1>
+
+					 
+				</header>
+
+				<div class="lg:hidden mb-8 p-4 border border-cyber-primary/30 rounded bg-cyber-primary/5 hidden" id="toc-mobile">
+					<h4 class="text-sm font-bold text-cyber-primary mb-2 border-b border-cyber-primary/20 pb-1 font-mono">Daftar Isi</h4>
+					<nav id="toc-list-mobile" class="text-sm font-mono text-slate-600 dark:text-slate-400"></nav>
+				</div>
+
+				<div id="post-content" class="prose prose-slate dark:prose-invert prose-sm sm:prose-base md:prose-lg prose-headings:font-mono prose-a:text-cyber-primary hover:prose-a:text-cyber-glow max-w-none relative">
+					<h2 id="multimedia-tanpa-plugin">Multimedia Tanpa Plugin</h2>
+
+<p>Salah satu inovasi terbesar dalam HTML5 adalah kemampuan menanamkan berkas <strong>Audio</strong> dan <strong>Video</strong> secara langsung ke dalam web tanpa membutuhkan <em>plugin</em> pihak ketiga (seperti Flash Player yang kini sudah usang).</p>
+
+<hr>
+
+<h2 id="1-elemen-video-video">1. Elemen Video (<code class="language-plaintext highlighter-rouge">&lt;video&gt;</code>)</h2>
+
+<p>Elemen <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> digunakan untuk menayangkan video di halaman web.</p>
+
+<h3 id="sintaks-dasar">Sintaks Dasar:</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"video-tutorial.mp4"</span> <span class="na">controls</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span><span class="nt">&gt;</span>
+    Browser Anda tidak mendukung pemutaran video HTML5.
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+<h3 id="menggunakan-tag-source-multi-format-support">Menggunakan Tag <code class="language-plaintext highlighter-rouge">&lt;source&gt;</code> (Multi Format Support)</h3>
+<p>Setiap browser mendukung format video yang berbeda-beda. Penggunaan elemen <code class="language-plaintext highlighter-rouge">&lt;source&gt;</code> memungkinkan kita menyediakan beberapa format video sebagai cadangan (<em>fallback</em>).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">poster=</span><span class="s">"thumbnail.jpg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video.ogv"</span> <span class="na">type=</span><span class="s">"video/ogg"</span><span class="nt">&gt;</span>
+    Browser Anda tidak mendukung tag video HTML5.
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+<h3 id="atribut-penting-elemen-video">Atribut Penting Elemen <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code>:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Atribut</th>
+      <th style="text-align: left">Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">controls</code></td>
+      <td style="text-align: left">Menampilkan kontrol pemutar (tombol play/pause, volume, fullscreen)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">autoplay</code></td>
+      <td style="text-align: left">Memutar video secara otomatis saat halaman dimuat</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">muted</code></td>
+      <td style="text-align: left">Mematikan suara video (<em>mute</em>)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">loop</code></td>
+      <td style="text-align: left">Memutar ulang video secara otomatis setelah selesai</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">poster</code></td>
+      <td style="text-align: left">Menentukan gambar pratinjau (<em>thumbnail</em>) sebelum video diputar</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">preload</code></td>
+      <td style="text-align: left">Menentukan strategi pemuatan video (<code class="language-plaintext highlighter-rouge">auto</code>, <code class="language-plaintext highlighter-rouge">metadata</code>, <code class="language-plaintext highlighter-rouge">none</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Catatan Autoplay</strong>: Sebagian besar browser modern memblokir video dengan atribut <code class="language-plaintext highlighter-rouge">autoplay</code> kecuali disandingkan dengan atribut <code class="language-plaintext highlighter-rouge">muted</code>.</p>
+  <div class="language-html highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">autoplay</span> <span class="na">muted</span> <span class="na">loop</span> <span class="na">controls</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"background.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<hr>
+
+<h2 id="2-elemen-audio-audio">2. Elemen Audio (<code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>)</h2>
+
+<p>Elemen <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> digunakan untuk memutar musik atau pemutaran rekaman suara.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"musik.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"musik.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+    Browser Anda tidak mendukung elemen audio HTML5.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<h3 id="atribut-elemen-audio">Atribut Elemen <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>:</h3>
+<p>Atribut pada <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> mirip dengan elemen video: <code class="language-plaintext highlighter-rouge">controls</code>, <code class="language-plaintext highlighter-rouge">autoplay</code>, <code class="language-plaintext highlighter-rouge">loop</code>, <code class="language-plaintext highlighter-rouge">muted</code>, <code class="language-plaintext highlighter-rouge">preload</code>.</p>
+
+<hr>
+
+<h2 id="3-subtitle--keterangan-track">3. Subtitle &amp; Keterangan (<code class="language-plaintext highlighter-rouge">&lt;track&gt;</code>)</h2>
+
+<p>HTML5 mendukung penambahan subtitel atau teks deskripsi pada video menggunakan tag <code class="language-plaintext highlighter-rouge">&lt;track&gt;</code> dan berkas berkstensi <code class="language-plaintext highlighter-rouge">.vtt</code> (<em>WebVTT</em>).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">width=</span><span class="s">"640"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"film.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;track</span> <span class="na">src=</span><span class="s">"subtitel-id.vtt"</span> <span class="na">kind=</span><span class="s">"subtitles"</span> <span class="na">srclang=</span><span class="s">"id"</span> <span class="na">label=</span><span class="s">"Bahasa Indonesia"</span> <span class="na">default</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+				</div>
+
+				<div class="mt-6 sm:mt-12 py-4 sm:py-6 border-y border-slate-200 dark:border-slate-800">
+					<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+						<div class="flex items-center gap-2">
+							<span class="relative flex h-3 w-3">
+								<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-primary opacity-75"></span>
+								<span class="relative inline-flex rounded-full h-3 w-3 bg-cyber-primary"></span>
+							</span>
+							<span class="text-xs font-mono font-bold text-slate-500 dark:text-slate-400 tracking-widest"> Bagikan Artikel: </span>
+						</div>
+
+						<div class="flex flex-wrap gap-2">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" target="_blank" title="Share to Facebook" class="p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] text-slate-500 hover:text-[#1877f2] hover:border-[#1877f2] dark:hover:border-[#1877f2] dark:hover:text-[#1877f2] transition-all duration-300 group" rel="noopener noreferrer">
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewbox="0 0 24 24">
+									<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+								</svg>
+							</a>
+
+							<a href="https://twitter.com/intent/tweet?text=Audio+%26+Video+HTML5&amp;url=http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" target="_blank" title="Share to X" class="p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] text-slate-500 hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white transition-all duration-300 group" rel="noopener noreferrer">
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewbox="0 0 24 24">
+									<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+								</svg>
+							</a>
+
+							<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/&amp;title=Audio+%26+Video+HTML5" target="_blank" title="Share to LinkedIn" class="p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] text-slate-500 hover:text-[#0077b5] hover:border-[#0077b5] dark:hover:border-[#0077b5] dark:hover:text-[#0077b5] transition-all duration-300 group" rel="noopener noreferrer">
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewbox="0 0 24 24">
+									<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+								</svg>
+							</a>
+
+							<a href="https://api.whatsapp.com/send?text=Audio+%26+Video+HTML5%20http://0.0.0.0:4000/materi/programming/html/02-html5/02-audio-video-html5/" target="_blank" title="Share to WhatsApp" class="p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] text-slate-500 hover:text-[#25D366] hover:border-[#25D366] dark:hover:border-[#25D366] dark:hover:text-[#25D366] transition-all duration-300 group" rel="noopener noreferrer">
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewbox="0 0 24 24">
+									<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+								</svg>
+							</a>
+
+							<button onclick="copyCurrentUrl()" title="Copy Link" class="p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] text-slate-500 hover:text-cyber-primary hover:border-cyber-primary dark:hover:border-cyber-primary dark:hover:text-cyber-primary transition-all duration-300 group relative">
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+								</svg>
+								<span id="copy-tooltip" class="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-cyber-primary text-black text-[10px] font-bold rounded opacity-0 transition-opacity">Tersalin!</span>
+							</button>
+						</div>
+					</div>
+
+					
+					<div class="mt-6 sm:mt-12 pt-4 sm:pt-8 border-t border-slate-200 dark:border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
+						
+						<a href="/materi/programming/html/02-html5/01-html-semantic/" class="group relative flex items-center p-3 sm:p-5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] hover:border-cyber-primary dark:hover:border-cyber-primary hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300">
+							<div class="mr-3 sm:mr-4 p-2 sm:p-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-cyber-primary group-hover:text-black transition-all group-hover:-translate-x-1 flex-shrink-0">
+								<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+								</svg>
+							</div>
+
+							<div class="flex-1 min-w-0">
+								<span class="block text-[10px] font-bold font-mono text-slate-400 group-hover:text-cyber-primary tracking-widest mb-0.5"> Sebelumnya </span>
+								<span class="block text-sm sm:text-base font-bold text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white truncate"> Memahami Semantic Tag HTML5 </span>
+							</div>
+						</a>
+						 
+						<a href="/materi/programming/html/02-html5/03-form-html5-fitur-baru/" class="group relative flex flex-row-reverse items-center p-3 sm:p-5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0d1117] hover:border-cyber-primary dark:hover:border-cyber-primary hover:shadow-[0_0_15px_rgba(14,165,233,0.15)] transition-all duration-300 text-right">
+							<div class="ml-3 sm:ml-4 p-2 sm:p-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 group-hover:bg-cyber-primary group-hover:text-black transition-all group-hover:translate-x-1 flex-shrink-0">
+								<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+								</svg>
+							</div>
+
+							<div class="flex-1 min-w-0">
+								<span class="block text-[10px] font-bold font-mono text-slate-400 group-hover:text-cyber-primary tracking-widest mb-0.5"> Selanjutnya </span>
+								<span class="block text-sm sm:text-base font-bold text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white truncate"> Fitur Baru Form HTML5 </span>
+							</div>
+						</a>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="mt-8 sm:mt-16 mb-6 sm:mb-8 p-4 sm:p-6 border border-cyber-primary/40 rounded-lg bg-white dark:bg-black/40 flex flex-col md:flex-row items-center gap-4 sm:gap-6 relative overflow-hidden group">
+				<div class="absolute top-0 right-0 p-2 opacity-20 text-[10px] font-mono text-cyber-primary">Penulis</div>
+				<div class="relative flex-shrink-0">
+					<div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full p-1 border-2 border-cyber-primary shadow-[0_0_15px_theme('colors.cyber.primary')] bg-white dark:bg-black overflow-hidden">
+						<img src="https://github.com/makloheker.png" alt="Angga Saputra" class="w-full h-full rounded-full object-cover">
+					</div>
+					<div class="absolute bottom-0 right-2 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white dark:bg-black text-cyber-primary rounded-full border-2 border-cyber-primary shadow-md flex items-center justify-center z-10" title="Verified Author">
+						<svg class="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 text-cyber-primary" fill="currentColor" viewbox="0 0 20 20">
+							<path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="text-center md:text-left z-10 w-full">
+					<div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4">
+						<div>
+							<h3 class="text-lg sm:text-xl font-bold font-mono text-slate-900 dark:text-white flex items-center justify-center md:justify-start gap-1.5 sm:gap-2">
+								ANGGA SAPUTRA
+								<svg class="w-4 h-4 sm:w-5 sm:h-5 text-cyber-primary flex-shrink-0" fill="currentColor" viewbox="0 0 20 20" title="Verified Author">
+									<path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+								</svg>
+								<span class="px-2 py-0.5 rounded text-[10px] bg-cyber-primary text-black font-bold tracking-wider">Penulis</span>
+							</h3>
+							<p class="text-xs font-mono text-cyber-primary mb-2">@makloheker</p>
+						</div>
+						<a href="/about/" class="inline-flex items-center px-4 py-2 text-xs font-bold border border-cyber-primary text-cyber-primary hover:bg-cyber-primary hover:text-white transition-all rounded shadow-neon-sm font-mono group">
+							Lihat Profil
+							<svg class="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+							</svg>
+						</a>
+					</div>
+					<div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm font-mono mt-4 pt-4 border-t border-slate-200 dark:border-slate-800/50">
+						<a href="https://github.com/makloheker" target="_blank" class="text-slate-500 hover:text-cyber-primary transition-colors" rel="noopener noreferrer"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a>
+						<a href="https://www.linkedin.com/in/anggaphtml/" target="_blank" class="text-slate-500 hover:text-[#0077b5] transition-colors" rel="noopener noreferrer"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+								<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+						<a href="https://facebook.com/angga.phtml/" target="_blank" class="text-slate-500 hover:text-[#0077b5] transition-colors" rel="noopener noreferrer"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+								<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+						<a href="https://www.instagram.com/angga.phtml/" target="_blank" class="text-slate-500 hover:text-[#0077b5] transition-colors" rel="noopener noreferrer"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+								<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+					</div>
+				</div>
+			</div>
+
+			<section class="mt-16 pt-8 border-t border-cyber-primary/30">
+	<div class="flex items-center gap-2 mb-6">
+		<div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+		<h3 class="text-xl font-bold font-mono text-cyber-primary">Komentar &amp; Diskusi</h3>
+		<span class="text-xs text-slate-500 font-mono ml-auto">Status: Terbuka</span>
+	</div>
+
+	<div class="giscus-container bg-white/50 dark:bg-black/20 p-4 rounded-lg border border-slate-300 dark:border-cyber-primary/20 shadow-inner">
+		<div class="giscus"></div>
+	</div>
+</section>
+
+<script>
+	const themeDark = "transparent_dark";
+	const themeLight = "light";
+
+	function getGiscusTheme() {
+		if (localStorage.getItem("color-theme") === "dark") {
+			return themeDark;
+		}
+		if (localStorage.getItem("color-theme") === "light") {
+			return themeLight;
+		}
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return themeDark;
+		}
+		return document.documentElement.classList.contains("dark") ? themeDark : themeLight;
+	}
+
+	function loadGiscus() {
+		const script = document.createElement("script");
+		script.src = "https://giscus.app/client.js";
+
+		script.setAttribute("data-repo", "makloheker/blog-comments");
+		script.setAttribute("data-repo-id", "R_kgDONk...");
+		script.setAttribute("data-category", "Announcements");
+		script.setAttribute("data-category-id", "DIC_kwDONk...");
+
+		script.setAttribute("data-mapping", "pathname");
+		script.setAttribute("data-strict", "0");
+		script.setAttribute("data-reactions-enabled", "1");
+		script.setAttribute("data-emit-metadata", "0");
+		script.setAttribute("data-input-position", "top");
+		script.setAttribute("data-lang", "en");
+		script.setAttribute("crossorigin", "anonymous");
+		script.async = true;
+
+		script.setAttribute("data-theme", getGiscusTheme());
+
+		const giscusDiv = document.querySelector(".giscus");
+		if (giscusDiv) {
+			giscusDiv.innerHTML = "";
+			giscusDiv.appendChild(script);
+		}
+	}
+
+	loadGiscus();
+
+	const toggleBtn = document.getElementById("theme-toggle");
+	if (toggleBtn) {
+		toggleBtn.addEventListener("click", function () {
+			setTimeout(() => {
+				const newTheme = document.documentElement.classList.contains("dark") ? themeDark : themeLight;
+
+				const iframe = document.querySelector("iframe.giscus-frame");
+				if (iframe) {
+					iframe.contentWindow.postMessage(
+						{
+							giscus: { setConfig: { theme: newTheme } },
+						},
+						"https://giscus.app"
+					);
+				}
+			}, 100);
+		});
+	}
+</script>
+
+		</article>
+
+		<aside class="hidden lg:block lg:col-span-3 pl-8 relative">
+			<div class="sticky top-24 transition-all duration-300 space-y-6 lg:space-y-8">
+				
+				<div>
+					<div class="flex items-center gap-2 mb-4 border-b border-slate-200 dark:border-slate-800 pb-2">
+						<span class="w-2 h-2 bg-cyber-primary rounded-full animate-pulse"></span>
+						<h3 class="font-mono font-bold text-slate-700 dark:text-slate-300 text-xs tracking-widest">SERI: html</h3>
+					</div>
+
+					<div class="max-h-[70vh] overflow-y-auto custom-scrollbar border border-slate-200 dark:border-slate-800 rounded bg-white dark:bg-[#0d1117]">
+						<ul class="divide-y divide-slate-100 dark:divide-slate-800/50">
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/01-pengenalan-html/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 1</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Pengenalan HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/02-struktur-dasar-html/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 2</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Struktur Dasar HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/03-elemen-tag-atribut/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 3</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Elemen, Tag, dan Atribut</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/04-heading-dan-paragraf/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 4</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Heading dan Paragraf</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/05-format-teks/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 5</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Formatting Teks</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/06-list-html/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 6</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">List / Daftar HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/07-hyperlink-link/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 7</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Hyperlink &amp; Link HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/08-gambar-dan-media/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 8</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Gambar &amp; Media HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/09-tabel-html/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 9</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Tabel HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/01-html-dasar/10-form-dan-input/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 10</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Form &amp; Input HTML</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/02-html5/01-html-semantic/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 11</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Memahami Semantic Tag HTML5</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<div class="block p-3 border-l-4 border-cyber-primary bg-cyber-primary/5">
+									<span class="text-[10px] font-mono text-cyber-primary block mb-0.5">SAAT INI</span>
+									<span class="text-sm font-bold text-slate-900 dark:text-white leading-tight block">Audio &amp; Video HTML5</span>
+								</div>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/02-html5/03-form-html5-fitur-baru/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 13</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Fitur Baru Form HTML5</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/02-html5/04-canvas-dan-svg/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 14</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Canvas &amp; SVG HTML5</span>
+								</a>
+								
+							</li>
+							
+							<li>
+								
+								<a href="/materi/programming/html/02-html5/05-web-storage-html5/" class="block p-3 border-l-4 border-transparent hover:border-slate-400 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group">
+									<span class="text-[10px] font-mono text-slate-400 group-hover:text-slate-500 block mb-0.5">BAGIAN 15</span>
+									<span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200 leading-tight block">Web Storage HTML5</span>
+								</a>
+								
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+
+				
+			</div>
+		</aside>
+	</div>
+</div>
+
+<style>
+	/* Style tambahan untuk scrollbar playlist */
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 4px;
+	}
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #475569;
+		border-radius: 4px;
+	}
+
+	/* Lightbox Theme Adaptive Styling */
+	#lightbox-backdrop {
+		background-color: rgba(255, 255, 255, 0.95);
+	}
+	html.dark #lightbox-backdrop {
+		background-color: rgba(13, 17, 23, 0.95);
+	}
+
+	#lightbox-caption {
+		background-color: rgba(255, 255, 255, 0.95);
+		color: #1e293b;
+		border-color: rgba(14, 165, 233, 0.4);
+	}
+	html.dark #lightbox-caption {
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #38bdf8;
+		border-color: rgba(14, 165, 233, 0.5);
+	}
+
+	#lightbox-close-btn {
+		color: #475569;
+	}
+	html.dark #lightbox-close-btn {
+		color: #94a3b8;
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// --- 1. SETUP GAMBAR (SKELETON & LIGHTBOX) ---
+		const contentImages = document.querySelectorAll("#post-content img");
+		contentImages.forEach((img) => {
+			const wrapper = document.createElement("div");
+			wrapper.className = "relative w-full flex justify-center my-8 rounded-lg overflow-hidden bg-slate-900 min-h-[200px] img-skeleton";
+			img.parentNode.insertBefore(wrapper, img);
+			wrapper.appendChild(img);
+
+			img.style.opacity = "0";
+			img.style.transition = "opacity 0.5s ease-in-out";
+			img.style.cursor = "zoom-in";
+
+			if (img.complete) {
+				imageLoaded(img, wrapper);
+			} else {
+				img.onload = () => imageLoaded(img, wrapper);
+			}
+
+			img.addEventListener("click", function () {
+				openLightbox(this.src, this.alt);
+			});
+		});
+
+		function imageLoaded(img, wrapper) {
+			img.style.opacity = "1";
+			wrapper.classList.remove("img-skeleton");
+			wrapper.style.backgroundColor = "transparent";
+			wrapper.style.minHeight = "auto";
+		}
+
+		// --- 2. SETUP TOC (AUTO GENERATE + SCROLL SPY) ---
+		// Kita tetap jalankan TOC untuk semua, tapi hanya akan muncul jika container #sidebar-toc ada (yaitu di Blog Mode)
+		const postContent = document.getElementById("post-content");
+		const headers = postContent.querySelectorAll("h2, h3");
+
+		const tocMobile = document.getElementById("toc-mobile");
+		const listMobile = document.getElementById("toc-list-mobile");
+		const tocSidebar = document.getElementById("sidebar-toc");
+
+		if (headers.length >= 2) {
+			function createTocList() {
+				const ul = document.createElement("ul");
+				ul.className = "space-y-3 list-none";
+
+				headers.forEach((header, index) => {
+					if (!header.id) header.id = "section-" + index;
+
+					const li = document.createElement("li");
+					const a = document.createElement("a");
+					a.href = "#" + header.id;
+					a.textContent = header.textContent;
+					a.className = "block text-sm text-slate-500 dark:text-slate-400 hover:text-cyber-primary transition-colors no-underline toc-link";
+					a.dataset.target = header.id;
+
+					if (header.tagName === "H3") {
+						li.className = "ml-4";
+						a.className += " text-xs opacity-80";
+					} else {
+						a.className += " font-bold";
+					}
+
+					li.appendChild(a);
+					ul.appendChild(li);
+				});
+				return ul;
+			}
+
+			// Mobile TOC (Selalu ada jika header cukup)
+			if (tocMobile && listMobile) {
+				tocMobile.classList.remove("hidden");
+				tocMobile.classList.add("block");
+				listMobile.appendChild(createTocList().cloneNode(true));
+			}
+
+			// Desktop Sidebar TOC (Hanya muncul jika elemennya ada - Blog Mode)
+			if (tocSidebar) {
+				tocSidebar.appendChild(createTocList());
+			}
+
+			// --- 3. SCROLL SPY ---
+			const observerOptions = {
+				root: null,
+				rootMargin: "0px 0px -80% 0px",
+				threshold: 0,
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						document.querySelectorAll(".toc-link").forEach((link) => {
+							link.classList.remove("text-cyber-primary", "translate-x-1");
+							link.classList.add("text-slate-500", "dark:text-slate-400");
+						});
+
+						const activeLink = document.querySelector(`.toc-link[data-target="${entry.target.id}"]`);
+						if (activeLink) {
+							activeLink.classList.remove("text-slate-500", "dark:text-slate-400");
+							activeLink.classList.add("text-cyber-primary", "translate-x-1");
+						}
+					}
+				});
+			}, observerOptions);
+
+			headers.forEach((header) => observer.observe(header));
+		}
+	});
+
+	// --- LIGHTBOX FUNCTIONS ---
+	const lightbox = document.getElementById("lightbox-modal");
+	const lightboxImg = document.getElementById("lightbox-img");
+	const lightboxCaption = document.getElementById("lightbox-caption");
+
+	function openLightbox(src, alt) {
+		lightboxImg.src = src;
+		lightboxCaption.textContent = alt || "Gambar Pratinjau";
+		lightbox.classList.remove("hidden");
+		lightbox.classList.add("flex");
+		setTimeout(() => {
+			lightbox.classList.remove("opacity-0");
+		}, 10);
+		document.body.style.overflow = "hidden";
+	}
+
+	function closeLightbox() {
+		lightbox.classList.add("opacity-0");
+		setTimeout(() => {
+			lightbox.classList.add("hidden");
+			lightbox.classList.remove("flex");
+			lightboxImg.src = "";
+		}, 300);
+		document.body.style.overflow = "auto";
+	}
+
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
+			closeLightbox();
+		}
+	});
+</script>
+<script>
+	// --- FUNGSI COPY URL ---
+	function copyCurrentUrl() {
+		navigator.clipboard.writeText(window.location.href).then(() => {
+			const tooltip = document.getElementById("copy-tooltip");
+			tooltip.classList.remove("opacity-0");
+			setTimeout(() => {
+				tooltip.classList.add("opacity-0");
+			}, 2000);
+		});
+	}
+</script>
+</main>
+
+		<footer class="border-t border-cyber-primary/30 bg-white/80 dark:bg-[#050505]/90 backdrop-blur-md mt-12 sm:mt-20 md:mt-28">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-6 sm:pb-8">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 sm:mb-12">
+					<div class="space-y-4">
+						<a href="/" class="flex items-center gap-2 group">
+							<div class="w-6 h-6 bg-cyber-primary text-black flex items-center justify-center font-bold font-mono rounded text-xs">IT</div>
+							<span class="font-bold text-lg font-mono text-slate-800 dark:text-white tracking-tighter"> Low Skill </span>
+						</a>
+						<p class="text-sm text-slate-500 dark:text-slate-400 font-mono leading-relaxed">
+							Dokumentasi pembelajaran keamanan siber, pemrograman, dan teknologi IT. <br>
+							<span class="text-xs opacity-50">"Belajar, Berbagi, dan Berkembang."</span>
+						</p>
+
+						<div class="flex gap-3 pt-2">
+							<a href="https://github.com/makloheker" target="_blank" class="text-slate-400 hover:text-cyber-primary transition-colors" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+							<a href="https://linkedin.com/in/anggaphtml" target="_blank" class="text-slate-400 hover:text-cyber-primary transition-colors" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							NAVIGASI
+						</h3>
+						<ul class="space-y-3 font-mono text-sm text-slate-600 dark:text-slate-400">
+							<li><a href="/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Beranda</a></li>
+							<li><a href="/about/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Tentang</a></li>
+							<li><a href="/project/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Project</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							KATEGORI
+						</h3>
+						<ul class="space-y-3 font-mono text-sm text-slate-600 dark:text-slate-400">
+							<li><a href="/materi/programming/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Programming</a></li>
+							<li><a href="/materi/pentesting/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">Pentesting</a></li>
+							<li><a href="/latihan/ctf/" class="hover:text-cyber-primary hover:pl-2 transition-all duration-300 block">CTF Challenges</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-xs font-bold font-mono text-cyber-primary tracking-widest mb-6 flex items-center gap-2">
+							<span class="w-1.5 h-1.5 bg-cyber-primary rounded-full"></span>
+							INFORMASI
+						</h3>
+						<div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-black/50 rounded-lg">
+							<div class="flex items-center justify-between mb-2">
+								<span class="text-xs font-mono text-slate-500">Status:</span>
+								<span class="text-xs font-mono text-green-500 font-bold flex items-center gap-1">
+									<span class="relative flex h-2 w-2">
+										<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+										<span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+									</span>
+									Aktif
+								</span>
+							</div>
+							<div class="flex items-center justify-between mb-2">
+								<span class="text-xs font-mono text-slate-500">Akses:</span>
+								<span class="text-xs font-mono text-cyber-primary">Pengunjung</span>
+							</div>
+							<div class="flex items-center justify-between">
+								<span class="text-xs font-mono text-slate-500">Versi:</span>
+								<span class="text-xs font-mono text-slate-400">v4.0.1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+					<div class="text-xs font-mono text-slate-500 text-center md:text-left">
+						<p>© 2026 Angga Saputra. All Rights Reserved.</p>
+					</div>
+
+					<div class="flex items-center gap-6 text-[10px] font-mono font-bold tracking-wider text-slate-500">
+						<a href="/privacy/" class="hover:text-cyber-primary transition-colors">Kebijakan Privasi</a>
+						<a href="/disclaimer/" class="hover:text-red-500 transition-colors">Penafian</a>
+					</div>
+
+					<div class="flex items-center gap-4 text-xs font-mono text-slate-500">
+						<span>Dibuat dengan <a href="https://jekyllrb.com/" target="_blank" class="hover:text-cyber-primary transition-colors" rel="noopener noreferrer">Jekyll</a></span>
+						<span>•</span>
+						<span>Didesain dengan <a href="https://tailwindcss.com/" target="_blank" class="hover:text-cyber-primary transition-colors" rel="noopener noreferrer">Tailwind</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			// Bagian 2: Logika Interaktif (Menunggu elemen ada dulu)
+			document.addEventListener("DOMContentLoaded", function () {
+				// 1. Ambil Element
+				const themeToggleBtn = document.getElementById("theme-toggle");
+				const darkIcon = document.getElementById("theme-toggle-dark-icon");
+				const lightIcon = document.getElementById("theme-toggle-light-icon");
+
+				// Safety Check: Pastikan tombol ada (untuk mencegah error di halaman tanpa navbar)
+				if (!themeToggleBtn) return;
+
+				// 2. Sinkronisasi Ikon Awal
+				// Cek apakah mode dark sedang aktif (hasil dari script di head tadi)
+				if (document.documentElement.classList.contains("dark")) {
+					lightIcon.classList.remove("hidden");
+					darkIcon.classList.add("hidden");
+				} else {
+					lightIcon.classList.add("hidden");
+					darkIcon.classList.remove("hidden");
+				}
+
+				// 3. Event Listener Tombol
+				themeToggleBtn.addEventListener("click", function () {
+					// Toggle Ikon
+					darkIcon.classList.toggle("hidden");
+					lightIcon.classList.toggle("hidden");
+
+					// Toggle Tema & Simpan ke LocalStorage
+					if (localStorage.getItem("color-theme")) {
+						if (localStorage.getItem("color-theme") === "light") {
+							document.documentElement.classList.add("dark");
+							localStorage.setItem("color-theme", "dark");
+						} else {
+							document.documentElement.classList.remove("dark");
+							localStorage.setItem("color-theme", "light");
+						}
+					} else {
+						if (document.documentElement.classList.contains("dark")) {
+							document.documentElement.classList.remove("dark");
+							localStorage.setItem("color-theme", "light");
+						} else {
+							document.documentElement.classList.add("dark");
+							localStorage.setItem("color-theme", "dark");
+						}
+					}
+				});
+
+				// 4. Mobile Menu Toggle (Opsional jika masih error)
+				window.toggleMobileMenu = function () {
+					const menu = document.getElementById("mobile-menu");
+					if (menu) menu.classList.toggle("hidden");
+				};
+			});
+		</script>
+		<script>
+			let searchData = [];
+
+			// 1. Toggle Modal
+			function toggleSearch() {
+				const modal = document.getElementById("search-modal");
+				const input = document.getElementById("search-input");
+
+				modal.classList.toggle("hidden");
+
+				if (!modal.classList.contains("hidden")) {
+					input.focus();
+					// Load data only once when opened
+					if (searchData.length === 0) {
+						fetch('/search.json')
+							.then((response) => response.json())
+							.then((data) => {
+								searchData = data;
+							});
+					}
+				} else {
+					// Clear input when closed
+					input.value = "";
+					document.getElementById("search-results").innerHTML = '<div class="p-8 text-center text-slate-500 font-mono text-sm">> WAITING_FOR_INPUT...</div>';
+				}
+			}
+
+			// 2. Filter Logic
+			document.getElementById("search-input").addEventListener("input", function (e) {
+				const query = e.target.value.toLowerCase();
+				const resultsContainer = document.getElementById("search-results");
+
+				if (query.length < 2) {
+					resultsContainer.innerHTML = '<div class="p-8 text-center text-slate-500 font-mono text-sm">> TYPE_MORE_CHARS...</div>';
+					return;
+				}
+
+				const results = searchData.filter((item) => {
+					return item.title.toLowerCase().includes(query) || item.url.toLowerCase().includes(query);
+				});
+
+				if (results.length > 0) {
+					let html = '<ul class="space-y-1">';
+					results.forEach((item) => {
+						// Badge color logic
+						let badgeColor = "bg-slate-100 text-slate-600 border-slate-300"; // Default
+						if (item.category === "MATERI_DB") badgeColor = "bg-blue-500/10 text-blue-500 border-blue-500/20";
+						if (item.category === "TRAINING") badgeColor = "bg-red-500/10 text-red-500 border-red-500/20";
+						if (item.category === "BLOG_LOG") badgeColor = "bg-green-500/10 text-green-500 border-green-500/20";
+
+						html += `
+                            <li>
+                                <a href="${item.url}" class="block p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-white/5 group transition-colors">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-sm font-bold font-mono text-slate-800 dark:text-slate-200 group-hover:text-cyber-primary highlight-text">${item.title}</span>
+                                        <span class="text-[10px] font-mono px-2 py-0.5 rounded border ${badgeColor}">${item.category}</span>
+                                    </div>
+                                    <span class="text-xs font-mono text-slate-400">${item.url}</span>
+                                </a>
+                            </li>
+                        `;
+					});
+					html += "</ul>";
+					resultsContainer.innerHTML = html;
+				} else {
+					resultsContainer.innerHTML = '<div class="p-8 text-center text-red-400 font-mono text-sm">[!] NO_MATCH_FOUND</div>';
+				}
+			});
+
+			// Close on ESC
+			document.addEventListener("keydown", function (e) {
+				if (e.key === "Escape") {
+					const modal = document.getElementById("search-modal");
+					if (!modal.classList.contains("hidden")) toggleSearch();
+				}
+				// Shortcut Ctrl+K to open
+				if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+					e.preventDefault();
+					toggleSearch();
+				}
+			});
+		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const codeBlocks = document.querySelectorAll("pre");
+				codeBlocks.forEach((block) => {
+					const wrapper = document.createElement("div");
+					wrapper.className = "relative group mb-6 mt-2";
+					block.parentNode.insertBefore(wrapper, block);
+					wrapper.appendChild(block);
+
+					const header = document.createElement("div");
+					header.className =
+						"absolute top-0 left-0 right-0 h-8 bg-slate-100 dark:bg-[#161b22] border-b border-slate-200 dark:border-[#30363d] rounded-t-lg flex items-center px-4 select-none transition-colors duration-300";
+					header.innerHTML = `<div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-red-500/80 border border-red-600/20"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80 border border-yellow-600/20"></span><span class="w-3 h-3 rounded-full bg-green-500/80 border border-green-600/20"></span></div><div class="ml-4 text-[10px] font-mono text-slate-500 dark:text-slate-400 font-bold tracking-wider">Kode</div>`;
+					block.style.paddingTop = "3rem";
+					wrapper.appendChild(header);
+
+					const copyBtn = document.createElement("button");
+					copyBtn.className =
+						"absolute top-1.5 right-2 px-2 py-1 rounded text-xs font-mono transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1 border bg-white border-slate-300 text-slate-600 hover:bg-slate-100 hover:text-blue-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white dark:hover:border-cyber-primary";
+					copyBtn.innerHTML = `<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg><span>SALIN</span>`;
+
+					copyBtn.addEventListener("click", () => {
+						const code = block.querySelector("code").innerText;
+						navigator.clipboard.writeText(code).then(() => {
+							copyBtn.innerHTML = `<span class="text-green-600 dark:text-green-400 font-bold">TERSALIN!</span>`;
+							setTimeout(() => {
+								copyBtn.innerHTML = `<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg><span>SALIN</span>`;
+							}, 2000);
+						});
+					});
+					wrapper.appendChild(copyBtn);
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,315 @@
+[
+  
+    {
+      "title": "Panduan Belajar Programming dari Nol untuk Pemula",
+      "url": "/blog/panduan-belajar-programming-pemula",
+      "category": "Blog",
+      "date": "30-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Konsep Dasar dan Arsitektur Jaringan Komputer Modern",
+      "url": "/blog/konsep-dasar-jaringan-komputer-modern",
+      "category": "Blog",
+      "date": "30-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Kali Linux vs Parrot Security OS: Mana yang lebih baik?",
+      "url": "/blog/kali-linux-parrot-sec-os",
+      "category": "Blog",
+      "date": "17-12-2025"
+    }
+    ,
+  
+    {
+      "title": "Welcome to Jekyll!",
+      "url": "/blog/welcome-to-jekyll",
+      "category": "Blog",
+      "date": "01-12-2025"
+    }
+    ,
+  
+    {
+      "title": "berak",
+      "url": "/blog/adakah-sibut",
+      "category": "Blog",
+      "date": "07-08-2025"
+    }
+    ,
+  
+    {
+      "title": "Hello",
+      "url": "/blog/hello",
+      "category": "Blog",
+      "date": "06-06-2025"
+    }
+    ,
+  
+    {
+      "title": "adakah acara malam ini // LEVEL_5",
+      "url": "/blog/jemboetss",
+      "category": "Blog",
+      "date": "01-01-2025"
+    }
+    ,
+  
+    {
+      "title": "Basic Networking Concepts",
+      "url": "/blog/networking-concepts",
+      "category": "Blog",
+      "date": "03-01-2024"
+    }
+    ,
+  
+    {
+      "title": "Basic Cyber Security Concepts",
+      "url": "/blog/cyber-security-concepts",
+      "category": "Blog",
+      "date": "02-01-2024"
+    }
+    ,
+  
+    {
+      "title": "Basic Programming Concepts",
+      "url": "/blog/programming-concepts",
+      "category": "Blog",
+      "date": "01-01-2024"
+    }
+    
+  
+
+  ,
+
+  
+    {
+      "title": "Instalasi Hydra di Linux",
+      "url": "/materi/pentest/hydra/install-hydra/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Pengenalan HTML",
+      "url": "/materi/programming/html/01-html-dasar/01-pengenalan-html/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Struktur Dasar HTML",
+      "url": "/materi/programming/html/01-html-dasar/02-struktur-dasar-html/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Elemen, Tag, dan Atribut",
+      "url": "/materi/programming/html/01-html-dasar/03-elemen-tag-atribut/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Heading dan Paragraf",
+      "url": "/materi/programming/html/01-html-dasar/04-heading-dan-paragraf/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Formatting Teks",
+      "url": "/materi/programming/html/01-html-dasar/05-format-teks/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "List / Daftar HTML",
+      "url": "/materi/programming/html/01-html-dasar/06-list-html/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Hyperlink &amp; Link HTML",
+      "url": "/materi/programming/html/01-html-dasar/07-hyperlink-link/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Gambar &amp; Media HTML",
+      "url": "/materi/programming/html/01-html-dasar/08-gambar-dan-media/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Tabel HTML",
+      "url": "/materi/programming/html/01-html-dasar/09-tabel-html/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Form &amp; Input HTML",
+      "url": "/materi/programming/html/01-html-dasar/10-form-dan-input/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Memahami Semantic Tag HTML5",
+      "url": "/materi/programming/html/02-html5/01-html-semantic/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Audio &amp; Video HTML5",
+      "url": "/materi/programming/html/02-html5/02-audio-video-html5/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Fitur Baru Form HTML5",
+      "url": "/materi/programming/html/02-html5/03-form-html5-fitur-baru/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Canvas &amp; SVG HTML5",
+      "url": "/materi/programming/html/02-html5/04-canvas-dan-svg/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Web Storage HTML5",
+      "url": "/materi/programming/html/02-html5/05-web-storage-html5/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Pengenalan JavaScript",
+      "url": "/materi/programming/js/dasar/01-pengenalan-dasar/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Pengenalan React",
+      "url": "/materi/programming/js/framework/01-intro/",
+      "category": "Materi",
+      "date": "31-07-2026"
+    }
+    
+  
+
+  ,
+
+  
+    {
+      "title": "Web Repair: Broken Login",
+      "url": "/latihan/coding/html/02-link/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "JS Action: Tombol Alert",
+      "url": "/latihan/coding/html/03-js-alert/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Web Repair: Broken Login",
+      "url": "/latihan/coding/html/10-hello-world/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Python: Module Import",
+      "url": "/latihan/coding/python/01-ganjil-genap/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Python: Import Modules",
+      "url": "/latihan/coding/python/02-import-module/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Misi Code: Modular Python",
+      "url": "/latihan/coding/python/03-calculator/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "The Roman Secret",
+      "url": "/latihan/ctf/crypto/caesar-cipher/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Login Admin Bypass (SQLi)",
+      "url": "/latihan/ctf/web/sqli-login-bypass/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Terminal: Find Backdoor",
+      "url": "/latihan/pentest/hydra/01-basic/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    ,
+  
+    {
+      "title": "Misi Terminal: Log Analysis",
+      "url": "/latihan/pentest/linux/01-find-flag/",
+      "category": "Latihan",
+      "date": "31-07-2026"
+    }
+    
+  
+]

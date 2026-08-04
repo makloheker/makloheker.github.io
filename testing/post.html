@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CYBER_SEC // DASHBOARD</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<script>
+			tailwind.config = {
+				darkMode: "class", // Manual toggling
+				theme: {
+					extend: {
+						fontFamily: {
+							mono: ['"JetBrains Mono"', "monospace"],
+						},
+						colors: {
+							cyber: {
+								base: "#0f172a", // Dark Slate
+								light: "#f1f5f9", // Light Slate
+								primary: "#0ea5e9", // Sky Blue 500
+								glow: "#38bdf8", // Sky Blue 400
+								darkacc: "#020617", // Deep Black/Blue
+							},
+						},
+						boxShadow: {
+							neon: '0 0 5px theme("colors.cyber.primary"), 0 0 20px theme("colors.cyber.glow")',
+							"neon-sm": '0 0 2px theme("colors.cyber.primary"), 0 0 10px theme("colors.cyber.primary")',
+						},
+						animation: {
+							"pulse-fast": "pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+							scanline: "scanline 8s linear infinite",
+						},
+						keyframes: {
+							scanline: {
+								"0%": { transform: "translateY(-100%)" },
+								"100%": { transform: "translateY(100%)" },
+							},
+						},
+					},
+				},
+			};
+		</script>
+
+		<style>
+			/* Custom Scrollbar */
+			::-webkit-scrollbar {
+				width: 8px;
+			}
+			::-webkit-scrollbar-track {
+				background: #0f172a;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #0ea5e9;
+				border-radius: 4px;
+			}
+
+			/* Grid Background Effect */
+			.bg-grid {
+				background-size: 40px 40px;
+				background-image: linear-gradient(to right, rgba(14, 165, 233, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(14, 165, 233, 0.1) 1px, transparent 1px);
+			}
+
+			/* CRT Scanline Overlay */
+			.scanline::before {
+				content: " ";
+				display: block;
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+				background-size: 100% 2px, 3px 100%;
+				pointer-events: none;
+				z-index: 50;
+			}
+		</style>
+	</head>
+
+	<body class="font-mono antialiased transition-colors duration-300 bg-cyber-light text-slate-800 dark:bg-cyber-base dark:text-cyan-50 scanline selection:bg-cyber-primary selection:text-white">
+		<div class="fixed inset-0 pointer-events-none bg-grid z-[-1]"></div>
+
+		<nav class="sticky top-0 z-40 w-full border-b border-cyber-primary/30 backdrop-blur-md bg-white/70 dark:bg-cyber-darkacc/80">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<div class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
+						<div class="w-3 h-3 bg-cyber-primary rounded-full animate-pulse-fast group-hover:shadow-neon"></div>
+						<span class="font-bold text-xl tracking-tighter text-cyber-primary group-hover:text-cyber-glow transition-all"> NET_SEC<span class="text-slate-500 dark:text-slate-400">_V4</span> </span>
+					</div>
+
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-4">
+							<a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">DASHBOARD</a>
+							<a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">LOGS</a>
+							<a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-cyber-primary hover:bg-cyber-primary/10 transition-all">NETWORK</a>
+						</div>
+					</div>
+
+					<button id="theme-toggle" class="p-2 rounded-md border border-cyber-primary/50 hover:bg-cyber-primary/20 hover:shadow-neon transition-all focus:outline-none">
+						<svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path
+								d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+							></path>
+						</svg>
+						<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-cyber-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+			<header class="mb-10">
+				<h1 class="text-4xl md:text-5xl font-bold mb-2"><span class="text-cyber-primary">></span> SYSTEM_STATUS: <span class="text-cyber-primary animate-pulse">ONLINE</span></h1>
+				<p class="text-slate-500 dark:text-slate-400 max-w-2xl border-l-2 border-cyber-primary pl-4">Welcome, User. Access Level: Admin. Monitoring active threats and system integrity.</p>
+			</header>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+				<div class="relative p-6 bg-white dark:bg-cyber-darkacc border border-cyber-primary/40 shadow-sm hover:shadow-neon transition-all duration-300 rounded-lg group">
+					<div class="absolute top-0 right-0 p-2 opacity-50 text-[10px]">CPU_01</div>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-lg font-bold">CPU Load</h3>
+						<span class="px-2 py-1 rounded text-xs font-bold bg-cyber-primary/20 text-cyber-primary border border-cyber-primary">STABLE</span>
+					</div>
+					<div class="text-3xl font-bold text-cyber-primary">12%</div>
+					<div class="w-full bg-slate-200 dark:bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
+						<div class="bg-cyber-primary h-1 w-[12%]"></div>
+					</div>
+				</div>
+
+				<div class="relative p-6 bg-white dark:bg-cyber-darkacc border border-cyber-primary/40 shadow-sm hover:shadow-neon transition-all duration-300 rounded-lg group">
+					<div class="absolute top-0 right-0 p-2 opacity-50 text-[10px]">MEM_01</div>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-lg font-bold">Memory</h3>
+						<span class="px-2 py-1 rounded text-xs font-bold bg-yellow-500/20 text-yellow-600 dark:text-yellow-400 border border-yellow-500/50">WARN</span>
+					</div>
+					<div class="text-3xl font-bold text-yellow-500">84%</div>
+					<div class="w-full bg-slate-200 dark:bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
+						<div class="bg-yellow-500 h-1 w-[84%]"></div>
+					</div>
+				</div>
+
+				<div class="relative p-6 bg-white dark:bg-cyber-darkacc border border-cyber-primary/40 shadow-sm hover:shadow-neon transition-all duration-300 rounded-lg group">
+					<div class="absolute top-0 right-0 p-2 opacity-50 text-[10px]">NET_01</div>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-lg font-bold">Threats</h3>
+						<span class="px-2 py-1 rounded text-xs font-bold bg-red-500/20 text-red-600 dark:text-red-400 border border-red-500/50">CRITICAL</span>
+					</div>
+					<div class="text-3xl font-bold text-red-500 animate-pulse">03</div>
+					<div class="w-full bg-slate-200 dark:bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
+						<div class="bg-red-500 h-1 w-full"></div>
+					</div>
+				</div>
+
+				<div class="relative p-6 bg-white dark:bg-cyber-darkacc border border-cyber-primary/40 shadow-sm hover:shadow-neon transition-all duration-300 rounded-lg group">
+					<div class="absolute top-0 right-0 p-2 opacity-50 text-[10px]">UPT_01</div>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-lg font-bold">Uptime</h3>
+						<span class="px-2 py-1 rounded text-xs font-bold bg-green-500/20 text-green-600 dark:text-green-400 border border-green-500/50">GOOD</span>
+					</div>
+					<div class="text-3xl font-bold text-green-500">99.9%</div>
+					<div class="w-full bg-slate-200 dark:bg-slate-800 h-1 mt-4 rounded-full overflow-hidden">
+						<div class="bg-green-500 h-1 w-full"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+				<div class="lg:col-span-2 space-y-8">
+					<section>
+						<h2 class="text-xl font-bold mb-4 border-b border-cyber-primary/30 pb-2">/ SYSTEM_LOGS / ALERTS</h2>
+						<div class="space-y-4">
+							<div class="flex items-center p-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400 dark:border-blue-800" role="alert">
+								<svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+									<path
+										d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+									/>
+								</svg>
+								<div><span class="font-medium">Info:</span> System update completed successfully at 0800 hours.</div>
+							</div>
+							<div class="flex items-center p-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800" role="alert">
+								<svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+									<path
+										d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+									/>
+								</svg>
+								<div><span class="font-medium">Warning:</span> Port 443 receiving unusually high traffic.</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2 class="text-xl font-bold mb-4 border-b border-cyber-primary/30 pb-2">/ PROTOCOLS</h2>
+						<div id="accordion-collapse" class="space-y-2">
+							<div class="border border-cyber-primary/30 rounded-lg overflow-hidden bg-white/50 dark:bg-cyber-darkacc">
+								<button
+									type="button"
+									class="accordion-btn flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 dark:text-gray-400 hover:bg-cyber-primary/10 transition-colors"
+									data-target="acc-body-1"
+								>
+									<span>PROTOCOL_ALPHA: Firewall Configuration</span>
+									<svg class="w-3 h-3 rotate-180 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+									</svg>
+								</button>
+								<div id="acc-body-1" class="hidden p-5 border-t border-cyber-primary/30 text-sm">
+									<p class="mb-2 text-gray-500 dark:text-gray-400">Firewall rules updated. Inbound traffic restricted to whitelisted IPs only. Executing strict packet inspection.</p>
+									<code class="text-xs text-cyber-primary block bg-black/20 p-2 rounded">iptables -A INPUT -p tcp --dport 22 -j DROP</code>
+								</div>
+							</div>
+							<div class="border border-cyber-primary/30 rounded-lg overflow-hidden bg-white/50 dark:bg-cyber-darkacc">
+								<button
+									type="button"
+									class="accordion-btn flex items-center justify-between w-full p-4 font-medium text-left text-gray-500 dark:text-gray-400 hover:bg-cyber-primary/10 transition-colors"
+									data-target="acc-body-2"
+								>
+									<span>PROTOCOL_BETA: Encryption Standards</span>
+									<svg class="w-3 h-3 rotate-180 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+									</svg>
+								</button>
+								<div id="acc-body-2" class="hidden p-5 border-t border-cyber-primary/30 text-sm">
+									<p class="text-gray-500 dark:text-gray-400">All data at rest is encrypted using AES-256. Keys are rotated every 24 hours automatically.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2 class="text-xl font-bold mb-4 border-b border-cyber-primary/30 pb-2">/ CONTROLS</h2>
+						<div class="flex flex-wrap gap-4">
+							<button
+								class="px-6 py-2.5 bg-cyber-primary hover:bg-cyan-400 text-white font-bold rounded shadow-[0_0_10px_theme('colors.cyber.primary')] hover:shadow-[0_0_20px_theme('colors.cyber.primary')] transition-all duration-300"
+							>
+								EXECUTE
+							</button>
+							<button class="px-6 py-2.5 bg-transparent border border-cyber-primary text-cyber-primary font-bold rounded hover:bg-cyber-primary/10 hover:shadow-neon-sm transition-all duration-300">
+								SCAN_NETWORK
+							</button>
+							<button
+								onclick="toggleModal('demo-modal')"
+								class="px-6 py-2.5 bg-slate-800 text-gray-300 border border-slate-600 font-bold rounded hover:bg-slate-700 hover:text-white transition-all duration-300"
+							>
+								OPEN_TERMINAL
+							</button>
+						</div>
+					</section>
+				</div>
+
+				<div class="lg:col-span-1">
+					<section class="bg-white/80 dark:bg-cyber-darkacc border border-cyber-primary/30 p-6 rounded-lg shadow-lg relative overflow-hidden">
+						<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-cyber-primary/20 to-transparent"></div>
+
+						<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+							<svg class="w-5 h-5 text-cyber-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+							</svg>
+							SECURE_LOGIN
+						</h2>
+						<form class="space-y-6">
+							<div>
+								<label for="agent-id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Agent ID</label>
+								<input
+									type="text"
+									id="agent-id"
+									class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyber-primary focus:border-cyber-primary focus:shadow-neon-sm block w-full p-2.5 dark:bg-slate-900 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyber-primary dark:focus:border-cyber-primary transition-all outline-none"
+									placeholder="AGT-007"
+									required
+								/>
+							</div>
+							<div>
+								<label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Passkey</label>
+								<input
+									type="password"
+									id="password"
+									class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-cyber-primary focus:border-cyber-primary focus:shadow-neon-sm block w-full p-2.5 dark:bg-slate-900 dark:border-slate-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-cyber-primary dark:focus:border-cyber-primary transition-all outline-none"
+									placeholder="••••••••"
+									required
+								/>
+							</div>
+							<div class="flex items-start">
+								<div class="flex items-center h-5">
+									<input
+										id="remember"
+										type="checkbox"
+										value=""
+										class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-cyber-primary dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-cyber-primary dark:ring-offset-gray-800"
+										required
+									/>
+								</div>
+								<label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Establish Secure Link</label>
+							</div>
+							<button
+								type="submit"
+								class="w-full text-white bg-cyber-primary hover:bg-cyan-400 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyber-primary dark:hover:bg-cyan-400 dark:focus:ring-cyan-800 transition-all shadow-neon hover:shadow-[0_0_20px_cyan]"
+							>
+								AUTHENTICATE
+							</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		<div
+			id="demo-modal"
+			tabindex="-1"
+			class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full flex items-center justify-center backdrop-blur-sm bg-black/60"
+		>
+			<div class="relative w-full max-w-md max-h-full">
+				<div class="relative bg-white rounded-lg shadow dark:bg-slate-900 border border-cyber-primary shadow-neon">
+					<div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-700">
+						<h3 class="text-xl font-medium text-gray-900 dark:text-white font-mono">> TERMINAL_ACCESS</h3>
+						<button
+							type="button"
+							onclick="toggleModal('demo-modal')"
+							class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+						>
+							<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+							</svg>
+							<span class="sr-only">Close modal</span>
+						</button>
+					</div>
+					<div class="p-6 space-y-4">
+						<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400 font-mono text-sm">
+							Connecting to remote server...<br />
+							<span class="text-green-500">Success.</span><br />
+							Listing directories...<br />
+							/root<br />
+							/bin<br />
+							/home/user
+						</p>
+						<div class="mt-4">
+							<input type="text" class="w-full bg-black text-green-400 border border-green-700 font-mono text-sm p-2 outline-none" placeholder="Type command..." />
+						</div>
+					</div>
+					<div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-slate-700">
+						<button
+							onclick="toggleModal('demo-modal')"
+							type="button"
+							class="text-white bg-cyber-primary hover:bg-cyan-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+						>
+							Terminate
+						</button>
+						<button
+							onclick="toggleModal('demo-modal')"
+							type="button"
+							class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-slate-800 dark:text-gray-300 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700"
+						>
+							Run Background
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// 1. Dark/Light Mode Logic
+			const themeToggleBtn = document.getElementById("theme-toggle");
+			const darkIcon = document.getElementById("theme-toggle-dark-icon");
+			const lightIcon = document.getElementById("theme-toggle-light-icon");
+
+			// Check local storage or system preference
+			if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+				document.documentElement.classList.add("dark");
+				lightIcon.classList.remove("hidden");
+			} else {
+				document.documentElement.classList.remove("dark");
+				darkIcon.classList.remove("hidden");
+			}
+
+			themeToggleBtn.addEventListener("click", function () {
+				// Toggle icons
+				darkIcon.classList.toggle("hidden");
+				lightIcon.classList.toggle("hidden");
+
+				// If is set in local storage
+				if (localStorage.getItem("color-theme")) {
+					if (localStorage.getItem("color-theme") === "light") {
+						document.documentElement.classList.add("dark");
+						localStorage.setItem("color-theme", "dark");
+					} else {
+						document.documentElement.classList.remove("dark");
+						localStorage.setItem("color-theme", "light");
+					}
+				} else {
+					if (document.documentElement.classList.contains("dark")) {
+						document.documentElement.classList.remove("dark");
+						localStorage.setItem("color-theme", "light");
+					} else {
+						document.documentElement.classList.add("dark");
+						localStorage.setItem("color-theme", "dark");
+					}
+				}
+			});
+
+			// 2. Accordion Logic
+			const accordions = document.querySelectorAll(".accordion-btn");
+			accordions.forEach((acc) => {
+				acc.addEventListener("click", () => {
+					const targetId = acc.getAttribute("data-target");
+					const content = document.getElementById(targetId);
+					const icon = acc.querySelector("svg");
+
+					// Toggle visibility
+					content.classList.toggle("hidden");
+
+					// Rotate icon
+					if (content.classList.contains("hidden")) {
+						icon.classList.add("rotate-180");
+					} else {
+						icon.classList.remove("rotate-180");
+					}
+				});
+			});
+
+			// 3. Modal Logic
+			function toggleModal(modalID) {
+				const modal = document.getElementById(modalID);
+				modal.classList.toggle("hidden");
+			}
+
+			// Close modal when clicking outside
+			window.onclick = function (event) {
+				const modal = document.getElementById("demo-modal");
+				if (event.target == modal) {
+					modal.classList.add("hidden");
+				}
+			};
+		</script>
+	</body>
+</html>

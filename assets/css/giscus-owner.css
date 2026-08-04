@@ -1,0 +1,43 @@
+/* Import Font JetBrains Mono */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+main {
+	/* Paksa Font Hacker */
+	--font-family-sans: "JetBrains Mono", monospace;
+	--font-family-mono: "JetBrains Mono", monospace;
+
+	/* Warna Dasar Cyber (Dark) */
+	--color-canvas-default: transparent;
+	--color-canvas-overlay: #0f172a;
+	--color-border-default: rgba(14, 165, 233, 0.3);
+	--color-border-primary: #0ea5e9;
+
+	/* Teks */
+	--color-fg-default: #f1f5f9;
+	--color-fg-muted: #94a3b8;
+
+	/* Tombol & Input */
+	--color-btn-bg: #0f172a;
+	--color-btn-border: #0ea5e9;
+	--color-btn-primary-bg: #0ea5e9;
+	--color-input-bg: rgba(2, 6, 23, 0.5);
+	--color-input-border: rgba(14, 165, 233, 0.3);
+}
+
+.gsc-comment-box {
+	border-radius: 0;
+	border: 1px solid var(--color-border-default);
+}
+
+/* === FITUR OWNER HIGHLIGHT === */
+/* Ini yang membuat komentar Anda beda dari orang lain */
+.gsc-comment-box.gsc-comment-box--is-owner {
+	border-color: #f43f5e !important; /* Merah Neon */
+	box-shadow: 0 0 10px rgba(244, 63, 94, 0.3); /* Efek Glow */
+}
+
+/* Badge Author jadi Merah */
+.gsc-comment-box.gsc-comment-box--is-owner .gsc-author-badge {
+	background-color: #f43f5e !important;
+	border-color: #f43f5e !important;
+}
